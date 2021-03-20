@@ -334,11 +334,9 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
 ```
-
-아래는 적용된 모습이다.
-
-![](Task_1.PNG)
-
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
 
 ### 2.괄호를 작성하기 위해 이스케이프문 '\\'를 사용한뒤 괄호를 적용하면 된다.
 
