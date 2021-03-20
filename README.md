@@ -369,12 +369,15 @@ Visit https://github.com
 ### 2. Issues and pull requests
 * Within conversations on GitHub, references to issues and pull requests are automatically converted to shortened links.
 
-
 |Reference type	 |Raw reference	 |Short link |
 |:---|:---|:---|
 |Issue or pull request URL|	https://github.com/jlord/sheetsee.js/issues/26|	#26|
 | # and issue or pull request number| #26	| #26 |
 |GH- and issue or pull request number| GH-26| GH-26|
+
+#1
+mojombo#1
+mojombo/github-flavored-markdown#1
 
 ### 3.Commit SHAs
 * References to a commit's SHA hash are automatically converted into shortened links to the commit on GitHub.
@@ -384,6 +387,11 @@ Visit https://github.com
 |Commit URL	|https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e	|a5c3785|
 |SHA|	a5c3785ed8d6a35868bc169f07e40e889087fd2e|	a5c3785|
 |User@SHA|	jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e|jlord@a5c3785|
+
+16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+
 # <span class="lime"><strong>취소선(Strikethrough)
 ### 1. '~~' 을 취소선을 적용할 범위마다 앞뒤로 적어주면 적용된다.
 
