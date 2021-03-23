@@ -1,39 +1,3 @@
-# GFM_Syntax
-
-<style>
-    *{
-        font-family : ariel, 'sans-serif';
-        margin-bottom :20px;
-        margin-top :20px;
-    }
-    #BGC{
-        background-color : #addb40;
-        color:white;
-        font-size : 64px;
-        padding:20px;
-        }
-    .lime{color : #addb40;}
-    .orange{color : #cf6d1d;}
-    #px32{font-size:32px;}
-    
-    table{
-        border:1px solid lightgray;
-        width: 100%;
-        table-layout :fixed;
-        border-collapse: collapse;
-    }
-    th{
-        background-color : #addb40;
-        font-weight : bold;
-        color : white;
-    }
-    th, td
-    {
-        border:1px solid lightgray;
-        padding : 5px;
-    }
-</style>
-
 <div id="BGC"><strong>Basic Syntax</strong></div>
 
 # <span class="lime"><strong>비주얼 스튜디오 코드사용법</strong> </span>
@@ -289,6 +253,27 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 <div id="BGC"><strong>GFM Syntax</strong></div>
 
 
+# <span class="lime"><strong>코드블럭(Code Block)</strong></span>
+```markdown
+    ```(language)
+    ```
+
+    ```ruby
+    require 'redcarpet'
+    markdown = Redcarpet.new("Hello World!")
+    puts markdown.to_html
+    ```
+```
+
+____________________________
+ 
+ ```ruby
+    require 'redcarpet'
+    markdown = Redcarpet.new("Hello World!")
+    puts markdown.to_html
+```
+____________________________
+
 # <span class="lime"><strong>표만들기</strong></span>
 
 ### 1. '|' 로 일단 표를 나눈다.
@@ -392,10 +377,24 @@ mojombo/github-flavored-markdown#1
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
-# <span class="lime"><strong>취소선(Strikethrough)
+# <span class="lime"><strong>취소선(Strikethrough)<strong></span>
 ### 1. '~~' 을 취소선을 적용할 범위마다 앞뒤로 적어주면 적용된다.
 
     ~~안녕하세요~~
 
 ~~안녕하세요~~
-    
+
+# <span class="lime"><strong>이모티콘 사용(Emoji)<strong></span>
+
+### 문장 사이에 사용하고 싶은 이모티콘의 [Emojicode](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) 를 :로 감싸면서 사용한다.
+
+
+```markdown
+:EMOJICODE:
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
+```
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
