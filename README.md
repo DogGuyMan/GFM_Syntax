@@ -2,68 +2,68 @@ https://github.com/DogGuyMan/GFM_Syntax
 
 ----------
 # Git
-## 1. gitì˜ ê¸°ì´ˆ
-**ì •ì˜** : ëª¨ë“  íŒŒì¼ ë²„ì ¼ì„ ê´€ë¦¬í•˜ê²Œ ë„ì™€ì£¼ëŠ” ì˜¤í”ˆ ì†ŒìŠ¤ë‹¤
+## 1. gitÀÇ ±âÃÊ
+**Á¤ÀÇ** : ¸ðµç ÆÄÀÏ ¹öÁ¯À» °ü¸®ÇÏ°Ô µµ¿ÍÁÖ´Â ¿ÀÇÂ ¼Ò½º´Ù
 
-gitì„ ëª°ëžë˜ ìƒíƒœì—ì„œëŠ” ì—¬ëŸ¬ íŒŒì¼ì˜ ìˆ˜ì •ë³¸ì„ ì–´ë–»ê²Œ ê´€ë¦¬í–ˆì„ê¹Œ?
+gitÀ» ¸ô¶ú´ø »óÅÂ¿¡¼­´Â ¿©·¯ ÆÄÀÏÀÇ ¼öÁ¤º»À» ¾î¶»°Ô °ü¸®ÇßÀ»±î?
 
 ![](2021-05-09-07-28-30.png)
 
-ì•„ë§ˆ ì´ëŸ°ì‹ìœ¼ë¡œ ê´€ë¦¬ í–ˆì—ˆì„ê²ƒì´ë‹¤. 
+¾Æ¸¶ ÀÌ·±½ÄÀ¸·Î °ü¸® Çß¾úÀ»°ÍÀÌ´Ù. 
 
-í•˜ì§€ë§Œ ìœ„ì˜ ê·¸ë¦¼ì²˜ëŸ¼ ê·œì¹™ ì—†ì´ ì´ë¦„ì´ ë§ˆìŒëŒ€ë¡œ ë¶™ì—¬ì§„ê²½ìš° ì–´ë–¤ê²ƒì´ ìˆ˜ì •ë˜ì—ˆëŠ”ì§€ ì•Œìˆ˜ê°€ ì—†ë‹¤
+ÇÏÁö¸¸ À§ÀÇ ±×¸²Ã³·³ ±ÔÄ¢ ¾øÀÌ ÀÌ¸§ÀÌ ¸¶À½´ë·Î ºÙ¿©Áø°æ¿ì ¾î¶²°ÍÀÌ ¼öÁ¤µÇ¾ú´ÂÁö ¾Ë¼ö°¡ ¾ø´Ù
 
-ìŠ¤ëƒ…ìƒ·ì´ë¼ëŠ” ë°ì´í„° ì²˜ë¦¬ë¡œ ì €ìš©ëŸ‰ìœ¼ë¡œ ë¹ ë¥´ê³  ê°„íŽ¸í•˜ê²Œ ë²„ì ¼ê´€ë¦¬ë¥¼ í•  ìˆ˜ ìžˆë‹¤.
+½º³À¼¦ÀÌ¶ó´Â µ¥ÀÌÅÍ Ã³¸®·Î Àú¿ë·®À¸·Î ºü¸£°í °£ÆíÇÏ°Ô ¹öÁ¯°ü¸®¸¦ ÇÒ ¼ö ÀÖ´Ù.
 
 ----------
-## 2. gitì˜ "ìƒíƒœ"
+## 2. gitÀÇ "»óÅÂ"
 
-ì„¸ ê°€ì§€ ìƒíƒœ
-Gitì€ íŒŒì¼ì„ Committed, Modified, Staged ì´ë ‡ê²Œ ì„¸ ê°€ì§€ ìƒíƒœë¡œ ê´€ë¦¬í•œë‹¤.
+¼¼ °¡Áö »óÅÂ
+GitÀº ÆÄÀÏÀ» Committed, Modified, Staged ÀÌ·¸°Ô ¼¼ °¡Áö »óÅÂ·Î °ü¸®ÇÑ´Ù.
 
 1. Committed<br>
-ë°ì´í„°ê°€ ë¡œì»¬ ë°ì´í„°ë² ì´ìŠ¤ì— ì•ˆì „í•˜ê²Œ ì €ìž¥ëë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•œë‹¤.
-Git ë””ë ‰í† ë¦¬ì— ìžˆëŠ” íŒŒì¼ë“¤ì€ Committed ìƒíƒœì´ë‹¤. 
+µ¥ÀÌÅÍ°¡ ·ÎÄÃ µ¥ÀÌÅÍº£ÀÌ½º¿¡ ¾ÈÀüÇÏ°Ô ÀúÀåµÆ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù.
+Git µð·ºÅä¸®¿¡ ÀÖ´Â ÆÄÀÏµéÀº Committed »óÅÂÀÌ´Ù. 
 
-2. Modified<br> ìˆ˜ì •í•œ íŒŒì¼ì„ ì•„ì§ ë¡œì»¬ ë°ì´í„°ë² ì´ìŠ¤ì— ì»¤ë°‹í•˜ì§€ ì•Šì€ ê²ƒì„ ë§í•œë‹¤.
-<br>ì•„ì§ Staging Areaì— ì¶”ê°€í•˜ì§€ ì•Šì•˜ìœ¼ë©´ Modifiedì´ë‹¤.
+2. Modified<br> ¼öÁ¤ÇÑ ÆÄÀÏÀ» ¾ÆÁ÷ ·ÎÄÃ µ¥ÀÌÅÍº£ÀÌ½º¿¡ Ä¿¹ÔÇÏÁö ¾ÊÀº °ÍÀ» ¸»ÇÑ´Ù.
+<br>¾ÆÁ÷ Staging Area¿¡ Ãß°¡ÇÏÁö ¾Ê¾ÒÀ¸¸é ModifiedÀÌ´Ù.
 
 3. Staged<br> 
-í˜„ìž¬ ìˆ˜ì •í•œ íŒŒì¼ì„ ê³§ ì»¤ë°‹í•  ê²ƒì´ë¼ê³  í‘œì‹œí•œ ìƒíƒœë¥¼ ì˜ë¯¸í•œë‹¤.<br>íŒŒì¼ì„ ìˆ˜ì •í•˜ê³  Staging Areaì— ì¶”ê°€í–ˆë‹¤ë©´ Stagedì´ë‹¤.
+ÇöÀç ¼öÁ¤ÇÑ ÆÄÀÏÀ» °ð Ä¿¹ÔÇÒ °ÍÀÌ¶ó°í Ç¥½ÃÇÑ »óÅÂ¸¦ ÀÇ¹ÌÇÑ´Ù.<br>ÆÄÀÏÀ» ¼öÁ¤ÇÏ°í Staging Area¿¡ Ãß°¡Çß´Ù¸é StagedÀÌ´Ù.
 
 ----------
-## 3. gitì˜ ë‹¨ê³„
+## 3. gitÀÇ ´Ü°è
 ![](2021-05-09-06-48-35.png)
 
-Gitì´ í•˜ëŠ” ì¼ì€
-1. ì›Œí‚¹ íŠ¸ë¦¬ì—ì„œ íŒŒì¼ì„ ìˆ˜ì •í•œë‹¤. ì›Œí‚¹ íŠ¸ë¦¬ëŠ” í”„ë¡œì íŠ¸ì˜ íŠ¹ì • ë²„ì „ì„ Checkout í•œ ê²ƒì´ë‹¤. 
+GitÀÌ ÇÏ´Â ÀÏÀº
+1. ¿öÅ· Æ®¸®¿¡¼­ ÆÄÀÏÀ» ¼öÁ¤ÇÑ´Ù. ¿öÅ· Æ®¸®´Â ÇÁ·ÎÁ§Æ®ÀÇ Æ¯Á¤ ¹öÀüÀ» Checkout ÇÑ °ÍÀÌ´Ù. 
 
-2. Staging Areaì— íŒŒì¼ì„ Stage í•´ì„œ ì»¤ë°‹í•  ìŠ¤ëƒ…ìƒ·ì„ ë§Œë“ ë‹¤. ëª¨ë“  íŒŒì¼ì„ ì¶”ê°€í•  ìˆ˜ë„ ìžˆê³  ì„ íƒí•˜ì—¬ ì¶”ê°€í•  ìˆ˜ë„ ìžˆë‹¤.
+2. Staging Area¿¡ ÆÄÀÏÀ» Stage ÇØ¼­ Ä¿¹ÔÇÒ ½º³À¼¦À» ¸¸µç´Ù. ¸ðµç ÆÄÀÏÀ» Ãß°¡ÇÒ ¼öµµ ÀÖ°í ¼±ÅÃÇÏ¿© Ãß°¡ÇÒ ¼öµµ ÀÖ´Ù.
 
-3. Staging Areaì— ìžˆëŠ” íŒŒì¼ë“¤ì„ ì»¤ë°‹í•´ì„œ Git ë””ë ‰í† ë¦¬ì— ì˜êµ¬ì ì¸ ìŠ¤ëƒ…ìƒ·ìœ¼ë¡œ ì €ìž¥í•œë‹¤.
+3. Staging Area¿¡ ÀÖ´Â ÆÄÀÏµéÀ» Ä¿¹ÔÇØ¼­ Git µð·ºÅä¸®¿¡ ¿µ±¸ÀûÀÎ ½º³À¼¦À¸·Î ÀúÀåÇÑ´Ù.
 
 -------
-## 4. ì›Œí‚¹ ë””ë ‰í† ë¦¬
-**ì›Œí‚¹ ë””ë ‰í† ë¦¬**ëŠ” ëª¨ë“  íŒŒì¼ì€ í¬ê²Œ *Tracked(ê´€ë¦¬ëŒ€ìƒìž„)* ì™€ *Untracked(ê´€ë¦¬ëŒ€ìƒì´ ì•„ë‹˜)* ë¡œ ë‚˜ëˆˆë‹¤.
+## 4. ¿öÅ· µð·ºÅä¸®
+**¿öÅ· µð·ºÅä¸®**´Â ¸ðµç ÆÄÀÏÀº Å©°Ô *Tracked(°ü¸®´ë»óÀÓ)* ¿Í *Untracked(°ü¸®´ë»óÀÌ ¾Æ´Ô)* ·Î ³ª´«´Ù.
 
 ![](2021-05-09-06-49-35.png)
 
-1. Tracked íŒŒì¼ì€ ì´ë¯¸ ìŠ¤ëƒ…ìƒ·ì— í¬í•¨ë¼ ìžˆë˜ íŒŒì¼ì´ë‹¤. Modified(ìˆ˜ì •í•¨) ê·¸ë¦¬ê³  Staged(ì»¤ë°‹ìœ¼ë¡œ ì €ìž¥ì†Œì— ê¸°ë¡í• ) ìƒíƒœ ì¤‘ í•˜ë‚˜ì´ë‹¤. 
+1. Tracked ÆÄÀÏÀº ÀÌ¹Ì ½º³À¼¦¿¡ Æ÷ÇÔµÅ ÀÖ´ø ÆÄÀÏÀÌ´Ù. Modified(¼öÁ¤ÇÔ) ±×¸®°í Staged(Ä¿¹ÔÀ¸·Î ÀúÀå¼Ò¿¡ ±â·ÏÇÒ) »óÅÂ Áß ÇÏ³ªÀÌ´Ù. 
 
-2. Untracked íŒŒì¼ì€ ì›Œí‚¹ ë””ë ‰í† ë¦¬ì— ìžˆëŠ” íŒŒì¼ ì¤‘ ìŠ¤ëƒ…ìƒ·ì—ë„ Staging Areaì—ë„ í¬í•¨ë˜ì§€ ì•Šì€ íŒŒì¼ì´ë‹¤. 
+2. Untracked ÆÄÀÏÀº ¿öÅ· µð·ºÅä¸®¿¡ ÀÖ´Â ÆÄÀÏ Áß ½º³À¼¦¿¡µµ Staging Area¿¡µµ Æ÷ÇÔµÇÁö ¾ÊÀº ÆÄÀÏÀÌ´Ù. 
 
 ### **git congif**
-Gitì˜ ì‚¬ìš© í™˜ê²½ì„ ì„¤ì •í•´ ì£¼ëŠ” ëª…ë ¹ì–´ ì´ë‹¤. í•œ ë²ˆë§Œ ì„¤ì •í•˜ë©´ ëœë‹¤. 
+GitÀÇ »ç¿ë È¯°æÀ» ¼³Á¤ÇØ ÁÖ´Â ¸í·É¾î ÀÌ´Ù. ÇÑ ¹ø¸¸ ¼³Á¤ÇÏ¸é µÈ´Ù. 
 
-* ì–¸ì œë“ ì§€ ë‹¤ì‹œ ë°”ê¿€ ìˆ˜ ìžˆë‹¤.
-    * git configë¼ëŠ” ë„êµ¬ë¡œ ì„¤ì • ë‚´ìš©ì„ í™•ì¸í•˜ê³  ë³€ê²½í•  ìˆ˜ ìžˆë‹¤. Gitì€ ì´ ì„¤ì •ì— ë”°ë¼ ë™ìž‘í•œë‹¤. ì´ë•Œ ì‚¬ìš©í•˜ëŠ” ì„¤ì • íŒŒì¼ì€ ì„¸ ê°€ì§€ë‚˜ ëœë‹¤.
+* ¾ðÁ¦µçÁö ´Ù½Ã ¹Ù²Ü ¼ö ÀÖ´Ù.
+    * git config¶ó´Â µµ±¸·Î ¼³Á¤ ³»¿ëÀ» È®ÀÎÇÏ°í º¯°æÇÒ ¼ö ÀÖ´Ù. GitÀº ÀÌ ¼³Á¤¿¡ µû¶ó µ¿ÀÛÇÑ´Ù. ÀÌ¶§ »ç¿ëÇÏ´Â ¼³Á¤ ÆÄÀÏÀº ¼¼ °¡Áö³ª µÈ´Ù.
     
-* ê³„ì • ì´ˆê¸°ì„¤ì •
+* °èÁ¤ ÃÊ±â¼³Á¤
     ```
-    git config --global user.name [ì´ë¦„]
-    git config --global user.email [ì´ë©”ì¼]
+    git config --global user.name [ÀÌ¸§]
+    git config --global user.email [ÀÌ¸ÞÀÏ]
     ```
-* ì‚¬ìš© í™˜ê²½ ì „ë¶€ í™•ì¸
+* »ç¿ë È¯°æ ÀüºÎ È®ÀÎ
     ```
     git config --list
     ```
@@ -74,10 +74,10 @@ Gitì˜ ì‚¬ìš© í™˜ê²½ì„ ì„¤ì •í•´ ì£¼ëŠ” ëª…ë ¹ì–´ ì´ë‹¤. í•œ ë²ˆë§Œ ì„¤ì •í•˜ë
 
 ![](2021-05-09-06-06-44.png)
 
-.git ì´ë¼ëŠ” í•˜ìœ„ ë””ë ‰í† ë¦¬ë¥¼ ë§Œë“¤ê³  íŒŒì¼ì˜ ë²„ì ¼ì„ ê´€ë¦¬í•œë‹¤ 
-* ì•„ì§ í”„ë¡œì íŠ¸ íŒŒì¼ ê´€ë¦¬ ëª»í•œë‹¤
+.git ÀÌ¶ó´Â ÇÏÀ§ µð·ºÅä¸®¸¦ ¸¸µé°í ÆÄÀÏÀÇ ¹öÁ¯À» °ü¸®ÇÑ´Ù 
+* ¾ÆÁ÷ ÇÁ·ÎÁ§Æ® ÆÄÀÏ °ü¸® ¸øÇÑ´Ù
 
-* .git ë””ë ‰í† ë¦¬ì—ëŠ” ì €ìž¥ì†Œì— í•„ìš”í•œ ë¼ˆëŒ€ íŒŒì¼(Skeleton)ì´ ë“¤ì–´ ìžˆë‹¤.
+* .git µð·ºÅä¸®¿¡´Â ÀúÀå¼Ò¿¡ ÇÊ¿äÇÑ »À´ë ÆÄÀÏ(Skeleton)ÀÌ µé¾î ÀÖ´Ù.
 
 ```
 git init
@@ -88,27 +88,27 @@ git init
 
 ![](2021-05-09-06-31-48.png)
 
-ê¸°ì¡´ ì €ìž¥ì†Œë¥¼ clone í•˜ëŠ”ê²ƒì´ë‹¤. ë‹¤ë¥¸ í”„ë¡œì íŠ¸ì˜ git ì €ìž¥ì†Œë¥¼ ë³µì‚¬í•˜ê³ ì‹¶ì„ Â‹Âš ì´ ëª…ë ¹ì„ ì‚¬ìš©í•œë‹¤.
+±âÁ¸ ÀúÀå¼Ò¸¦ clone ÇÏ´Â°ÍÀÌ´Ù. ´Ù¸¥ ÇÁ·ÎÁ§Æ®ÀÇ git ÀúÀå¼Ò¸¦ º¹»çÇÏ°í½ÍÀ» ?? ÀÌ ¸í·ÉÀ» »ç¿ëÇÑ´Ù.
 
-* Trackedì´ë©´ì„œ Unmodified ìƒíƒœì´ë‹¤. 
+* TrackedÀÌ¸é¼­ Unmodified »óÅÂÀÌ´Ù. 
 
 ```
-git clone [url "ê¹ƒí—ˆë¸Œ ì£¼ì†Œ"]
+git clone [url "±êÇãºê ÁÖ¼Ò"]
 ```
 
-### **C. git add [ì˜µì…˜]**
-íŒŒì¼ì„ stageìƒíƒœë¡œ ì „í™˜í•œë‹¤. 
-ê·¸ë ‡ê²Œ í•¨ìœ¼ë¡œ commit ì¤€ë¹„ìƒíƒœê°€ ëœë‹¤
+### **C. git add [¿É¼Ç]**
+ÆÄÀÏÀ» stage»óÅÂ·Î ÀüÈ¯ÇÑ´Ù. 
+±×·¸°Ô ÇÔÀ¸·Î commit ÁØºñ»óÅÂ°¡ µÈ´Ù
 
-ê¼­! commit ì „ì— ë°©ê¸ˆ ìˆ˜ì •ì‚¬í•­ë“¤ì„ ì €ìž¥í•œ ì´í›„ì— ì‹¤í–‰ë˜ì–´ì•¼ í•˜ëŠ” ëª…ë ¹ì–´ì´ë‹¤
+²À! commit Àü¿¡ ¹æ±Ý ¼öÁ¤»çÇ×µéÀ» ÀúÀåÇÑ ÀÌÈÄ¿¡ ½ÇÇàµÇ¾î¾ß ÇÏ´Â ¸í·É¾îÀÌ´Ù
 
-[ì˜µì…˜] ì‹¬ë³¼ë¡œ addí•  ë¶€ë¶„ì„ ì„¤ì •í•˜ëŠ”ë“± ì„¸ë¶€ì ì¸ ì˜µì…˜ì„ ì •í•  ìˆ˜ ìžˆë‹¤.
+[¿É¼Ç] ½Éº¼·Î addÇÒ ºÎºÐÀ» ¼³Á¤ÇÏ´Âµî ¼¼ºÎÀûÀÎ ¿É¼ÇÀ» Á¤ÇÒ ¼ö ÀÖ´Ù.
 
-|ëª…ë ¹ì–´|ì˜µì…˜|ì„¤ëª…|
+|¸í·É¾î|¿É¼Ç|¼³¸í|
 |:--|:--|:--|
-|git add .(í˜¹ *)| . (í˜¹ *) |í˜„ìž¬ í´ë”ì˜ ëª¨ë“  íŒŒì¼ê³¼ ë””ë ‰í† ë¦¬, í•˜ìœ„ ë””ë ‰í† ë¦¬ì— ë“  ì „ë¶€ë¥¼ staging areaì— ì¶”ê°€í•œë‹¤.|
-|git add -p [<íŒŒì¼>]| -p |íŒŒì¼ì˜ ì¼ë¶€ë¥¼ stagingí•˜ê¸°|
-|git add -i |-i | ìˆ˜ì •ë˜ê³  ì¶”ì ë˜ëŠ” íŒŒì¼ì˜ ë³€ê²½ ì‚¬í•­ stagingí•˜ê¸°|
+|git add .(È¤ *)| . (È¤ *) |ÇöÀç Æú´õÀÇ ¸ðµç ÆÄÀÏ°ú µð·ºÅä¸®, ÇÏÀ§ µð·ºÅä¸®¿¡ µç ÀüºÎ¸¦ staging area¿¡ Ãß°¡ÇÑ´Ù.|
+|git add -p [<ÆÄÀÏ>]| -p |ÆÄÀÏÀÇ ÀÏºÎ¸¦ stagingÇÏ±â|
+|git add -i |-i | ¼öÁ¤µÇ°í ÃßÀûµÇ´Â ÆÄÀÏÀÇ º¯°æ »çÇ× stagingÇÏ±â|
 
 ```
 git add 
@@ -116,33 +116,33 @@ git add
 
 
 ### **D. git log**
-. Gitì—ëŠ” ížˆìŠ¤í† ë¦¬ë¥¼ ì¡°íšŒí•˜ëŠ” ëª…ë ¹ì–´ì¸ git log ê°€ ìžˆë‹¤.
+. Git¿¡´Â È÷½ºÅä¸®¸¦ Á¶È¸ÇÏ´Â ¸í·É¾îÀÎ git log °¡ ÀÖ´Ù.
 
-ì»¤ë°‹ì˜ SHA-1 ì²´í¬ì„¬, ì €ìž ì´ë¦„, ì €ìž ì´ë©”ì¼, ì»¤ë°‹í•œ ë‚ ì§œ, ì»¤ë°‹ ë©”ì‹œì§€ë¥¼ ë³´ì—¬ì¤€ë‹¤.
+Ä¿¹ÔÀÇ SHA-1 Ã¼Å©¼¶, ÀúÀÚ ÀÌ¸§, ÀúÀÚ ÀÌ¸ÞÀÏ, Ä¿¹ÔÇÑ ³¯Â¥, Ä¿¹Ô ¸Þ½ÃÁö¸¦ º¸¿©ÁØ´Ù.
 
-* ì¡°íšŒ í‚¤ì›Œë“œë¥¼ ì œí•œ í•  ìˆ˜ ìžˆê³ ì¡°íšŒ ì˜µì…˜ì„ ì„ íƒ ê°€ëŠ¥í•˜ë‹¤
+* Á¶È¸ Å°¿öµå¸¦ Á¦ÇÑ ÇÒ ¼ö ÀÖ°íÁ¶È¸ ¿É¼ÇÀ» ¼±ÅÃ °¡´ÉÇÏ´Ù
 
 ```
 git log
 ```
 
 ### **E. git status**
-Gitì˜ "ìƒíƒœ" ë¶€ë¶„ì„ ì½˜ì†”ë¡œ í™•ì¸ í•  ìˆ˜ ìžˆë‹¤.
-ìž‘ì—… ë””ë ‰í† ë¦¬(working directory)ì™€ ìŠ¤í…Œì´ì§• ì˜ì—­(staging area)ì˜ ìƒíƒœë¥¼ í™•ì¸í•˜ê¸° ìœ„í•´ì„œ ì‚¬ìš©ëœë‹¤.
+GitÀÇ "»óÅÂ" ºÎºÐÀ» ÄÜ¼Ö·Î È®ÀÎ ÇÒ ¼ö ÀÖ´Ù.
+ÀÛ¾÷ µð·ºÅä¸®(working directory)¿Í ½ºÅ×ÀÌÂ¡ ¿µ¿ª(staging area)ÀÇ »óÅÂ¸¦ È®ÀÎÇÏ±â À§ÇØ¼­ »ç¿ëµÈ´Ù.
 
 >* ![](2021-05-09-07-47-19.png)<br>
-ë¹¨ê°„ìƒ‰ì€ ì•„ì§ ë‹´ê¸°ì§€ ì•Šì€ íŒŒì¼ì„ ë§í•œë‹¤ 
+»¡°£»öÀº ¾ÆÁ÷ ´ã±âÁö ¾ÊÀº ÆÄÀÏÀ» ¸»ÇÑ´Ù 
 
 >* ![](2021-05-09-11-51-08.png)<br>
-> ì—¬ê¸°ì„œ add ë¥¼ í•˜ê²Œ ëœë‹¤ë©´ ì´ˆë¡ìƒ‰ìœ¼ë¡œ ë°”ë€Œê²Œ ë  ê²ƒì´ë‹¤
+> ¿©±â¼­ add ¸¦ ÇÏ°Ô µÈ´Ù¸é ÃÊ·Ï»öÀ¸·Î ¹Ù²î°Ô µÉ °ÍÀÌ´Ù
 
 ```
 git status
 ```
 
 ### **F. git tag**
-íƒœê·¸ ì¡°íšŒí•˜ê¸°
-ìš°ì„  git tag ëª…ë ¹ìœ¼ë¡œ (-l, `--list`ëŠ” ì˜µì…˜) ì´ë¯¸ ë§Œë“¤ì–´ì§„ íƒœê·¸ê°€ ìžˆëŠ”ì§€ í™•ì¸í•  ìˆ˜ ìžˆë‹¤. 
+ÅÂ±× Á¶È¸ÇÏ±â
+¿ì¼± git tag ¸í·ÉÀ¸·Î (-l, `--list`´Â ¿É¼Ç) ÀÌ¹Ì ¸¸µé¾îÁø ÅÂ±×°¡ ÀÖ´ÂÁö È®ÀÎÇÒ ¼ö ÀÖ´Ù. 
 
 
 ```
@@ -151,139 +151,139 @@ git tag
 
 -------
 
-## 5. GIT ë””ë ‰í† ë¦¬ 
+## 5. GIT µð·ºÅä¸® 
 
 ### **A. git commit**
-ìˆ˜ì •í•œ ê²ƒì„ Staging Areaì—ì„œ íŒŒì¼ì„ ì»¤ë°‹í•œë‹¤. Unstaged ìƒíƒœì˜ íŒŒì¼ì€ ì»¤ë°‹ë˜ì§€ ì•ŠëŠ”ë‹¤
+¼öÁ¤ÇÑ °ÍÀ» Staging Area¿¡¼­ ÆÄÀÏÀ» Ä¿¹ÔÇÑ´Ù. Unstaged »óÅÂÀÇ ÆÄÀÏÀº Ä¿¹ÔµÇÁö ¾Ê´Â´Ù
 
-* ë§ˆì¹˜ ë””ë ‰í† ë¦¬ ì „ì²´ë¥¼ ë³µì‚¬í•˜ì—¬ ë¶™ì—¬ë„£ëŠ”ê²ƒê³¼ ë¹„ìŠ·í•˜ë‹¤.
+* ¸¶Ä¡ µð·ºÅä¸® ÀüÃ¼¸¦ º¹»çÇÏ¿© ºÙ¿©³Ö´Â°Í°ú ºñ½ÁÇÏ´Ù.
 
-* ë³€ê²½ë³¸ì„ ì „ì²´ ë³µì‚¬í•˜ëŠ”ê²Œ ì•„ë‹ˆë¼ ë³€ê²½ë‚´ì—­ (ì¼ëª… ë¸íƒ€ë¼ê³  í•˜ëŠ”ê²ƒ) ì„ ì €ìž¥í•œë‹¤
+* º¯°æº»À» ÀüÃ¼ º¹»çÇÏ´Â°Ô ¾Æ´Ï¶ó º¯°æ³»¿ª (ÀÏ¸í µ¨Å¸¶ó°í ÇÏ´Â°Í) À» ÀúÀåÇÑ´Ù
 
 ![](2021-05-09-02-54-47.png)
 ![](2021-05-09-02-55-04.png)
 
-* commit ì˜ ì˜µì…˜ë„ ì¡´ìž¬í•œë‹¤.
+* commit ÀÇ ¿É¼Çµµ Á¸ÀçÇÑ´Ù.
 
-|ëª…ë ¹ì–´|ì˜µì…˜|ì„¤ëª…|
+|¸í·É¾î|¿É¼Ç|¼³¸í|
 |:--|:--|:--|
-|git commit -m "ë©”ì„¸ì§€"| -m |ì¸ë¼ì¸ í˜•ì‹ìœ¼ë¡œ ë°”ë¡œ ì»¤ë°‹ ë©”ì„¸ì§€ ìž‘ì„±.|
-|git commit -a | -a|a : ë³„ë„ì˜ addëª…ë ¹ì–´ë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šê³  add, commitì„ í•œë²ˆì— ìˆ˜í–‰|
-|git commit -am "ë©”ì„¸ì§€"|-am | a, mì˜ ì˜µì…˜ì„ í•©ì¹œ í˜•íƒœ.|
+|git commit -m "¸Þ¼¼Áö"| -m |ÀÎ¶óÀÎ Çü½ÄÀ¸·Î ¹Ù·Î Ä¿¹Ô ¸Þ¼¼Áö ÀÛ¼º.|
+|git commit -a | -a|a : º°µµÀÇ add¸í·É¾î¸¦ »ç¿ëÇÏÁö ¾Ê°í add, commitÀ» ÇÑ¹ø¿¡ ¼öÇà|
+|git commit -am "¸Þ¼¼Áö"|-am | a, mÀÇ ¿É¼ÇÀ» ÇÕÄ£ ÇüÅÂ.|
 
 ```
 git commit
 ```
 
 ### **B. git remote**
-Push, Pull ê¸°ëŠ¥ìœ¼ë¡œ í˜‘ì—…ì„ í• ë•Œ ì‚¬ìš©ë˜ëŠ” ì €ìž¥ì†Œì´ë‹¤. ë¦¬ëª¨íŠ¸ ì €ìž¥ì†Œë¥¼ ê´€ë¦¬í•œë‹¤ëŠ” ê²ƒì€ ì €ìž¥ì†Œë¥¼ ì¶”ê°€, ì‚­ì œí•˜ëŠ” ê²ƒë¿ë§Œ ì•„ë‹ˆë¼ ë¸Œëžœì¹˜ë¥¼ ê´€ë¦¬í•˜ê³  ì¶”ì í• ì§€ ë§ì§€ ë“±ì„ ê´€ë¦¬í•˜ëŠ” ê²ƒì„ ë§í•œë‹¤.
+Push, Pull ±â´ÉÀ¸·Î Çù¾÷À» ÇÒ¶§ »ç¿ëµÇ´Â ÀúÀå¼ÒÀÌ´Ù. ¸®¸ðÆ® ÀúÀå¼Ò¸¦ °ü¸®ÇÑ´Ù´Â °ÍÀº ÀúÀå¼Ò¸¦ Ãß°¡, »èÁ¦ÇÏ´Â °Í»Ó¸¸ ¾Æ´Ï¶ó ºê·£Ä¡¸¦ °ü¸®ÇÏ°í ÃßÀûÇÒÁö ¸»Áö µîÀ» °ü¸®ÇÏ´Â °ÍÀ» ¸»ÇÑ´Ù.
 
-1. ë¦¬ëª¨íŠ¸ ì €ìž¥ì†Œ í™•ì¸í•˜ê¸°
-git remote ëª…ë ¹ìœ¼ë¡œ í˜„ìž¬ í”„ë¡œì íŠ¸ì— ë“±ë¡ëœ ë¦¬ëª¨íŠ¸ ì €ìž¥ì†Œë¥¼ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
+1. ¸®¸ðÆ® ÀúÀå¼Ò È®ÀÎÇÏ±â
+git remote ¸í·ÉÀ¸·Î ÇöÀç ÇÁ·ÎÁ§Æ®¿¡ µî·ÏµÈ ¸®¸ðÆ® ÀúÀå¼Ò¸¦ È®ÀÎÇÒ ¼ö ÀÖ´Ù.
 ![](2021-05-09-10-29-34.png)
 
-2. ë¦¬ëª¨íŠ¸ ì €ìž¥ì†Œ ì¶”ê°€í•˜ê¸°
-ì¡´ ì›Œí‚¹ ë””ë ‰í† ë¦¬ì— ìƒˆ ë¦¬ëª¨íŠ¸ ì €ìž¥ì†Œë¥¼ ì‰½ê²Œ ì¶”ê°€í•  ìˆ˜ ìžˆëŠ”ë° git remote add <ë‹¨ì¶•ì´ë¦„> <url> ëª…ë ¹ì„ ì‚¬ìš©í•œë‹¤.
+2. ¸®¸ðÆ® ÀúÀå¼Ò Ãß°¡ÇÏ±â
+Á¸ ¿öÅ· µð·ºÅä¸®¿¡ »õ ¸®¸ðÆ® ÀúÀå¼Ò¸¦ ½±°Ô Ãß°¡ÇÒ ¼ö ÀÖ´Âµ¥ git remote add <´ÜÃàÀÌ¸§> <url> ¸í·ÉÀ» »ç¿ëÇÑ´Ù.
 ![](2021-05-09-10-33-41.png)
-ì´ë ‡ê²Œ pull push í•  ì €ìž¥ì†Œì˜ ëª©ì ì§€ë¥¼ ì¶”ê°€í–ˆë‹¤. 
+ÀÌ·¸°Ô pull push ÇÒ ÀúÀå¼ÒÀÇ ¸ñÀûÁö¸¦ Ãß°¡Çß´Ù. 
 
 ```
-git remote [ì£¼ì†Œ]
+git remote [ÁÖ¼Ò]
 ```
 
 ### **C. git push**
-originì´ë¼ëŠ” ë°©ê¸ˆ ì „ ë¦¬í¬íŠ¸í•œ ì›ê²©ì €ìž¥ì†Œì—
- ì›í•˜ëŠ” ë¸Œëžœì¹˜ (ë¸Œëžœì¹˜ëŠ” ë’¤ì—ì„œ ì„¤ëª…)ì— í‘¸ì‰¬í•©ë‹ˆë‹¤.
+originÀÌ¶ó´Â ¹æ±Ý Àü ¸®Æ÷Æ®ÇÑ ¿ø°ÝÀúÀå¼Ò¿¡
+ ¿øÇÏ´Â ºê·£Ä¡ (ºê·£Ä¡´Â µÚ¿¡¼­ ¼³¸í)¿¡ Çª½¬ÇÕ´Ï´Ù.
 
 ### **D. git pull**
-ë‹¤ë¥¸ ì‚¬ëžŒì´ ì›ê²© ì €ìž¥ì†Œ(Remote repository)ì— ì—…ë°ì´íŠ¸í•œ íŒŒì¼ì´ ìžˆì„ ë•Œ, 
-ì›ê²©ì €ìž¥ì†Œì™€ ë‚´ ë¡œì»¬ì €ìž¥ì†Œì˜ ìƒíƒœë¥¼ ë™ì¼í•˜ê²Œ ë§Œë“¤ê¸° ìœ„í•´ pullì„ ì´ìš©í•©ë‹ˆë‹¤.
+´Ù¸¥ »ç¶÷ÀÌ ¿ø°Ý ÀúÀå¼Ò(Remote repository)¿¡ ¾÷µ¥ÀÌÆ®ÇÑ ÆÄÀÏÀÌ ÀÖÀ» ¶§, 
+¿ø°ÝÀúÀå¼Ò¿Í ³» ·ÎÄÃÀúÀå¼ÒÀÇ »óÅÂ¸¦ µ¿ÀÏÇÏ°Ô ¸¸µé±â À§ÇØ pullÀ» ÀÌ¿ëÇÕ´Ï´Ù.
 
 ### **E. git branch**
-ì½”ë“œë¥¼ í†µì§¸ë¡œ ë³µì‚¬í•˜ê³  ë‚˜ì„œ ì›ëž˜ ì½”ë“œì™€ëŠ” ìƒê´€ì—†ì´ ë…ë¦½ì ìœ¼ë¡œ ê°œë°œì„ ì§„í–‰í•  ìˆ˜ ìžˆëŠ”ë°, ì´ë ‡ê²Œ ë…ë¦½ì ìœ¼ë¡œ ê°œë°œí•˜ëŠ” ê²ƒì´ ë¸Œëžœì¹˜ë‹¤
+ÄÚµå¸¦ ÅëÂ°·Î º¹»çÇÏ°í ³ª¼­ ¿ø·¡ ÄÚµå¿Í´Â »ó°ü¾øÀÌ µ¶¸³ÀûÀ¸·Î °³¹ßÀ» ÁøÇàÇÒ ¼ö ÀÖ´Âµ¥, ÀÌ·¸°Ô µ¶¸³ÀûÀ¸·Î °³¹ßÇÏ´Â °ÍÀÌ ºê·£Ä¡´Ù
 
 ![](2021-05-09-02-58-37.png)
 ![](2021-05-09-02-59-20.png)
 
-ì´ëŸ°ì‹ìœ¼ë¡œ ìƒ‰ì´ ë‹¬ë¼ì§„ ê³µê°„ì´ ë³´ì¸ë‹¤
+ÀÌ·±½ÄÀ¸·Î »öÀÌ ´Þ¶óÁø °ø°£ÀÌ º¸ÀÎ´Ù
 
-ì—¬ê¸°ì—ì„œ ì¶”ê°€ë¡œ ë” ì»¤ë°‹ì„ í•œë‹¤ë©´..
+¿©±â¿¡¼­ Ãß°¡·Î ´õ Ä¿¹ÔÀ» ÇÑ´Ù¸é..
 
 ![](2021-05-09-03-00-29.png)
 
-ì—¬ê¸°ì„œ ì•Œìˆ˜ ìžˆëŠ” ì ì€
+¿©±â¼­ ¾Ë¼ö ÀÖ´Â Á¡Àº
 
-ì»¤ë°‹ì„ í•˜ë“  ë¸Œëžœì¹˜ë¥¼ í•˜ë˜
-í˜„ìž¬ ìš°ë¦¬ê°€ ìžˆëŠ” ìœ„ì¹˜(ë¸Œëžœì¹˜ ìœ„ì¹˜ë¼ê³  í•˜ìž)ê°€ ìžˆë‹¤. ì™¼ìª½ì—ì„œëŠ” mainì´ ë  ìˆ˜ ìžˆê³  ë˜ëŠ” newImageê°€ ë  ìˆ˜ ìžˆë‹¤.
+Ä¿¹ÔÀ» ÇÏµç ºê·£Ä¡¸¦ ÇÏ´ø
+ÇöÀç ¿ì¸®°¡ ÀÖ´Â À§Ä¡(ºê·£Ä¡ À§Ä¡¶ó°í ÇÏÀÚ)°¡ ÀÖ´Ù. ¿ÞÂÊ¿¡¼­´Â mainÀÌ µÉ ¼ö ÀÖ°í ¶Ç´Â newImage°¡ µÉ ¼ö ÀÖ´Ù.
 
 
 ### **F. git checkout**
-ë§Œì•½ ë‚´ê°€ main ì´ ì•„ë‹Œ newImageë¥¼ ê°€ì§€ê³  ìŒì§ì´ê³  ì‹¶ë‹¤ë©´ ì–´ë–»ê²Œ í•´ì•¼í•˜ëŠ”ê±¸ê¹Œ?
+¸¸¾à ³»°¡ main ÀÌ ¾Æ´Ñ newImage¸¦ °¡Áö°í À½Á÷ÀÌ°í ½Í´Ù¸é ¾î¶»°Ô ÇØ¾ßÇÏ´Â°É±î?
 
-git checkout newImage<br>(git checkout [ë¸Œëžœì¹˜ëª…])
+git checkout newImage<br>(git checkout [ºê·£Ä¡¸í])
 
-ìœ„ì˜ ëª…ë ¹ì–´ë¡œ ë¸Œëžœì¹˜ë¥¼ ì´ë™í•  ìˆ˜ ìžˆê²Œëœë‹¤.
+À§ÀÇ ¸í·É¾î·Î ºê·£Ä¡¸¦ ÀÌµ¿ÇÒ ¼ö ÀÖ°ÔµÈ´Ù.
 
-ì—¬ê¸°ì„œ ë˜ git commitì„ í•˜ê²Œëœë‹¤ë©´..
+¿©±â¼­ ¶Ç git commitÀ» ÇÏ°ÔµÈ´Ù¸é..
 
 ![](2021-05-09-03-05-16.png)
 
-ì´ë ‡ê²Œ ë©”ì¸ì´ ì•„ë‹Œ NewImageê°€ commit ë˜ì—ˆë‹¤
+ÀÌ·¸°Ô ¸ÞÀÎÀÌ ¾Æ´Ñ NewImage°¡ commit µÇ¾ú´Ù
 
 ![](2021-05-09-07-16-16.png)
 ![](2021-05-09-07-16-56.png)
 
-### **G. merge [ë¸Œëžœì¹˜ ëª…]**
-ë¸Œëžœì¹˜ë¥¼ ë³‘í•©í•œë‹¤
+### **G. merge [ºê·£Ä¡ ¸í]**
+ºê·£Ä¡¸¦ º´ÇÕÇÑ´Ù
 
-ë¸Œëžœì¹˜ ë³‘í•©ì€ merge ëª…ë ¹ì–´ë¡œ ì‹¤í–‰í•©ë‹ˆë‹¤. 
-ì´ ëª…ë ¹ì–´ì— ë³‘í•©í•  ì»¤ë°‹ ì´ë¦„ì„ ë„£ì–´ ì‹¤í–‰í•˜ë©´,<br> ì§€ì •í•œ ì»¤ë°‹ ë‚´ìš©ì´ 'HEAD'ê°€ ê°€ë¦¬í‚¤ê³  ìžˆëŠ” ë¸Œëžœì¹˜ì— ë„£ì–´ì§„ë‹¤. 
+ºê·£Ä¡ º´ÇÕÀº merge ¸í·É¾î·Î ½ÇÇàÇÕ´Ï´Ù. 
+ÀÌ ¸í·É¾î¿¡ º´ÇÕÇÒ Ä¿¹Ô ÀÌ¸§À» ³Ö¾î ½ÇÇàÇÏ¸é,<br> ÁöÁ¤ÇÑ Ä¿¹Ô ³»¿ëÀÌ 'HEAD'°¡ °¡¸®Å°°í ÀÖ´Â ºê·£Ä¡¿¡ ³Ö¾îÁø´Ù. 
 
-#### **HEADëž€?**
-head == í˜„ìž¬ ì²´í¬ì•„ì›ƒëœ ì»¤ë°‹
-í˜„ìž¬ ìž‘ì—…ì¤‘ì¸ ì»¤ë°‹ì´ë‹¤.
-HEADëŠ” í•­ìƒ ìž‘ì—…íŠ¸ë¦¬ì˜ ê°€ìž¥ ìµœê·¼ ì»¤ë°‹ì„ ê°€ë¦¬í‚µë‹ˆë‹¤.
+#### **HEAD¶õ?**
+head == ÇöÀç Ã¼Å©¾Æ¿ôµÈ Ä¿¹Ô
+ÇöÀç ÀÛ¾÷ÁßÀÎ Ä¿¹ÔÀÌ´Ù.
+HEAD´Â Ç×»ó ÀÛ¾÷Æ®¸®ÀÇ °¡Àå ÃÖ±Ù Ä¿¹ÔÀ» °¡¸®Åµ´Ï´Ù.
 
-* ^ì—°ì‚°ìžë¡œ HEADì˜ ë¶€ëª¨ ìž‘ì—… ì»¤ë°‹ì„ ê°€ë¥´í‚¬ ìˆ˜ ìžˆë‹¤.
+* ^¿¬»êÀÚ·Î HEADÀÇ ºÎ¸ð ÀÛ¾÷ Ä¿¹ÔÀ» °¡¸£Å³ ¼ö ÀÖ´Ù.
 
 
 ![](2021-05-09-03-36-37.png)
 
 ![](2021-05-09-03-37-00.png)
 
-### **H. git reset ì˜µì…˜ (í•´ì‹œ 4ê¸€ìž ì´ìƒ)**
-git ì´ì „ ê¸°ë¡ìœ¼ë¡œ undo í•˜ëŠ” ëª…ë ¹ì–´ë‹¤.
-ë¸Œëžœì¹˜ë¡œ í•˜ì—¬ê¸ˆ ì˜ˆì „ì˜ ì»¤ë°‹ì„ ê°€ë¦¬í‚¤ë„ë¡ ì´ë™ì‹œí‚¤ëŠ” ë°©ì‹ìœ¼ë¡œ ë³€ê²½ ë‚´ìš©ì„ ë˜ëŒë¦½ë‹ˆë‹¤.
+### **H. git reset ¿É¼Ç (ÇØ½Ã 4±ÛÀÚ ÀÌ»ó)**
+git ÀÌÀü ±â·ÏÀ¸·Î undo ÇÏ´Â ¸í·É¾î´Ù.
+ºê·£Ä¡·Î ÇÏ¿©±Ý ¿¹ÀüÀÇ Ä¿¹ÔÀ» °¡¸®Å°µµ·Ï ÀÌµ¿½ÃÅ°´Â ¹æ½ÄÀ¸·Î º¯°æ ³»¿ëÀ» µÇµ¹¸³´Ï´Ù.
 
-* "ížˆìŠ¤í† ë¦¬ë¥¼ ê³ ì³ì“´ë‹¤"ë¼ê³  ë§í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë§ˆì¹˜ ì• ì´ˆì— ì»¤ë°‹í•˜ì§€ ì•Šì€ ê²ƒì²˜ëŸ¼ ì˜ˆì „ ì»¤ë°‹ìœ¼ë¡œ ë¸Œëžœì¹˜ë¥¼ ì˜®ê¸°ëŠ” ê²ƒìž…ë‹ˆë‹¤.
+* "È÷½ºÅä¸®¸¦ °íÃÄ¾´´Ù"¶ó°í ¸»ÇÒ ¼ö ÀÖ½À´Ï´Ù. ¸¶Ä¡ ¾ÖÃÊ¿¡ Ä¿¹ÔÇÏÁö ¾ÊÀº °ÍÃ³·³ ¿¹Àü Ä¿¹ÔÀ¸·Î ºê·£Ä¡¸¦ ¿Å±â´Â °ÍÀÔ´Ï´Ù.
 
 
-#### **hard ì˜µì…˜ì´ëž€?**
---hard ì˜µì…˜ì€ ë˜ëŒë¦¬ëŠ” ê²ƒì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤. ì´ ì˜µì…˜ì„ ì‚¬ìš©í•˜ë©´ ì›Œí‚¹ ë””ë ‰í† ë¦¬ì˜ íŒŒì¼ê¹Œì§€ ê°•ì œë¡œ ë®ì–´ì“´ë‹¤. 
+#### **hard ¿É¼ÇÀÌ¶õ?**
+--hard ¿É¼ÇÀº µÇµ¹¸®´Â °ÍÀÌ ºÒ°¡´ÉÇÏ´Ù. ÀÌ ¿É¼ÇÀ» »ç¿ëÇÏ¸é ¿öÅ· µð·ºÅä¸®ÀÇ ÆÄÀÏ±îÁö °­Á¦·Î µ¤¾î¾´´Ù. 
 
-* ^ì—°ì‚°ìžë¡œ HEADì˜ ë¶€ëª¨ ìž‘ì—… ì»¤ë°‹ì„ ê°€ë¥´í‚¬ 
-ìˆ˜ ìžˆë‹¤.
+* ^¿¬»êÀÚ·Î HEADÀÇ ºÎ¸ð ÀÛ¾÷ Ä¿¹ÔÀ» °¡¸£Å³ 
+¼ö ÀÖ´Ù.
 
 ![](2021-05-09-04-47-36.png)
 
-ì´ëŸ¬ë©´ ë¡œì»¬ ì €ìž¥ì†Œì—ëŠ” ë§ˆì¹˜ C2ì»¤ë°‹ì´ ì•„ì˜ˆ ì—†ì—ˆë˜ ê²ƒê³¼ ë§ˆì°¬ê°€ì§€ ìƒíƒœê°€ ë©ë‹ˆë‹¤.
+ÀÌ·¯¸é ·ÎÄÃ ÀúÀå¼Ò¿¡´Â ¸¶Ä¡ C2Ä¿¹ÔÀÌ ¾Æ¿¹ ¾ø¾ú´ø °Í°ú ¸¶Âù°¡Áö »óÅÂ°¡ µË´Ï´Ù.
 
 ### **I. rebase**
-ë¸Œëžœì¹˜ ë¼ë¦¬ì˜ ìž‘ì—…ì„ ì ‘ëª©ì‹œí‚¤ëŠ” ë°©ë²•
+ºê·£Ä¡ ³¢¸®ÀÇ ÀÛ¾÷À» Á¢¸ñ½ÃÅ°´Â ¹æ¹ý
 
 ![](2021-05-09-03-52-59.png)
-ì´ëŸ° ìƒíƒœê°€ ìžˆë‹¤ê³  ê°€ì •í•˜ìž
+ÀÌ·± »óÅÂ°¡ ÀÖ´Ù°í °¡Á¤ÇÏÀÚ
 
 git rebase main
 
 ![](2021-05-09-03-53-37.png)
 
-main ê·¸ ë‹¤ìŒ ë„ˆë¨¸ë¡œ ë°©ê¸ˆê¹Œì§€ ìžˆì—ˆë˜ ë¸Œëžœì¹˜ê°€ ë¶™ì–´ì§
+main ±× ´ÙÀ½ ³Ê¸Ó·Î ¹æ±Ý±îÁö ÀÖ¾ú´ø ºê·£Ä¡°¡ ºÙ¾îÁü
 
 ---------------------
-# ë³¸ê²©ì ìœ¼ë¡œ ê¹ƒí—ˆë¸Œì˜ ì‚¬ìš© ì‹œë‚˜ë¦¬ì˜¤ë¥¼ ë³´ìž
+# º»°ÝÀûÀ¸·Î ±êÇãºêÀÇ »ç¿ë ½Ã³ª¸®¿À¸¦ º¸ÀÚ
 
-## 1. ì‹œìž‘ì „ ë³€ê²½ê³¼ ê¸°ì¡´ ê³µê°„ ë³µì‚¬
+## 1. ½ÃÀÛÀü º¯°æ°ú ±âÁ¸ °ø°£ º¹»ç
 
 ```
 git clone https://github.com/DogGuyMan/GFM_Syntax
@@ -291,40 +291,58 @@ git clone https://github.com/DogGuyMan/GFM_Syntax
 
 ![](2021-05-09-12-30-05.png)<br>
 
-ì €ë²ˆ ê³¼ì œì˜ ë§ˆí¬ë‹¤ìš´ íŒŒì¼ì´ë‹¤
-ì´ ê³¼ì œì˜ ë¼ìž„ìƒ‰ Cssë¥¼ ë¶‰ì€ìƒ‰ ê²€ì€ìƒ‰ìœ¼ë¡œ ë°”ê¿€ê²ƒì´ë‹¤.
+Àú¹ø °úÁ¦ÀÇ ¸¶Å©´Ù¿î ÆÄÀÏÀÌ´Ù
+ÀÌ °úÁ¦ÀÇ ¶óÀÓ»ö Css¸¦ ºÓÀº»ö °ËÀº»öÀ¸·Î ¹Ù²Ü°ÍÀÌ´Ù.
 
 ![](2021-05-09-12-44-43.png)<br>
 
-## 2. ê¹ƒí—ˆë¸Œ ì‹œìž‘
-ì´ì œ ê¹ƒí—ˆë¸Œì— ì˜¬ë¦¬ê¸°ì „ì— 
-ê¹ƒ ì„¤ì •ì„ í•œë‹¤
+## 2. ±êÇãºê ½ÃÀÛ
+* ÀÌÁ¦ ±êÇãºê¿¡ ¿Ã¸®±âÀü¿¡ ±ê ¼³Á¤À» ÇÑ´Ù
+* ÀÌ¸ÞÀÏ°ú ÀÌ¸§À» ¼³Á¤ÇÏ¸ç
+* git config·Î ¼³Á¤µÈ ±êÇãºê È¯°æÀ» È®ÀÎÇÑ´Ù.
 
 <img src ="2021-05-09-12-10-49.png" width="50%"><br>
 
-## 3. ê¹ƒ init
-<img src ="ê¹ƒ init.PNG" width="100%"><br>
 
-## 4. ê¹ƒ branch ê·¸ë¦¬ê³  ìƒíƒœë¥¼ í™•ì¸í•œë‹¤
-ê¹ƒí—ˆë¸Œì— ì›ë³¸ì„ ë³€ê²½í•  ìˆ˜ ì—†ìœ¼ë‹ˆ
-ë¸Œëžœì¹˜ë¥¼ ë‚˜ëˆ ì„œ ë”°ë¡œ ê³¼ì œë¥¼ ì˜¬ë¦¬ê² ë‹¤.
+## 3. ±ê init
+* ±êÇãºê ½ÃÀÛÀü µð·ºÅä¸®¸¦ ¸¸µé¾î ÁÖ±âÀ§ÇØ initÀ» ÇÏ¿´´Ù
+<img src ="±ê init.PNG" width="100%"><br>
+
+## 4. ±ê branch ±×¸®°í »óÅÂ¸¦ È®ÀÎÇÑ´Ù
+*±êÇãºê¿¡ ¿øº»À» º¯°æÇÒ ¼ö ¾øÀ¸´Ï
+*ºê·£Ä¡¸¦ ³ª´²¼­ µû·Î °úÁ¦¸¦ ¿Ã¸®°Ú´Ù.
 
 <img src ="git branch and status.PNG" width="100%"><br>
 
-## 5. ê¹ƒ ì²´í¬ì•„ì›ƒìœ¼ë¡œ ìž‘ì—… ë¸Œëžœì¹˜ë¥¼ ì´ë™í•œë‹¤.
+## 5. ±ê Ã¼Å©¾Æ¿ôÀ¸·Î ÀÛ¾÷ ºê·£Ä¡¸¦ ÀÌµ¿ÇÑ´Ù.
+* ÀÛ¾÷ÇÒ ºê·£Ä¡¸¦ ÀÌµ¿ÇÑ´Ù main -> git_homework
+
 <img src = "git checkout push.PNG" width="100%"><br>
 
-## 6. ì»¤ë°‹í•  ì¤€ë¹„ì™€ ì»¤ë°‹
-<img src = "ê¹ƒ add.PNG" width="100%"><br>
-<img src = "ê¹ƒ commit.PNG" width="100%"><br>
+## 6. Ä¿¹ÔÇÒ ÁØºñ¿Í Ä¿¹Ô
+* ±ê add¸¦ »ç¿ëÇØ¼­ º¯°æÇÑ ³»¿ªÀ» µî·ÏÇÑµÚ.
+* stage·Î ¿Å°Ü¼­ ÀÌÁ¦ º»°ÝÀûÀ¸·Î Ä¿¹ÔÇÒ ÁØºñ¸¦ÇÑ´Ù 
 
-## 7.ë³€ê²½ì  í™•ì¸
+<img src = "±ê add.PNG" width="100%"><br>
+
+* Ä¿¹ÔÀ» ÇÒ¶§ ÀÎ¶óÀÎ Çü½ÄÀÇ ¸Þ¼¼Áö¸¦ Àû°í Ä¿¹ÔÇÑ´Ù.
+
+<img src = "±ê commit.PNG" width="100%"><br>
+
+## 7.º¯°æÁ¡ È®ÀÎ
+* git stage·Î ÇöÀçÀÇ ºê·£Ä¡ »óÅÂ¸¦ È®ÀÎÇÑ´Ù.
+
 ![](2021-05-09-13-10-47.png)
 
-## 8.ê¹ƒ ë¡œê·¸
+## 8.±ê ·Î±×
+* ¿©ÅÂ Ä¿¹ÔÇÑ ³»¿ªÀ» È®ÀÎÇÑ´Ù
+
 ![](2021-05-09-13-17-34.png)
 
-## 9.ì‹¤í—˜ìš©ìœ¼ë¡œ ë¸Œëžœì¹˜ ë§Œë“¤ê³  ì‚­ì œí•œë‹¤ 
+## 9.½ÇÇè¿ëÀ¸·Î ºê·£Ä¡ ¸¸µé°í »èÁ¦ÇÑ´Ù 
+* ½ÇÇè¿ë branch experiment À» ¸¸µé°í
+* »èÁ¦ÇÏ´Â °úÁ¤ÀÌ´Ù.
+
 ![](2021-05-09-13-25-00.png)
 
 ![](2021-05-09-13-25-33.png)
@@ -335,11 +353,16 @@ git clone https://github.com/DogGuyMan/GFM_Syntax
 
 ![](2021-05-09-13-29-23.png)
 
-## 10. ì‹¤í—˜ìš©ìœ¼ë¡œ ë¸Œëžœì¹˜ ë§Œë“¤ê³  mergeí•œë‹¤
+## 10. ½ÇÇè¿ëÀ¸·Î ºê·£Ä¡ ¸¸µé°í mergeÇÑ´Ù
+* merge ½ÇÇè¿ëÀ¸·Î homework_2¸¦ ¸¸µé¾î¼­ 
+* homework_1 °ú merge¸¦ ÇÑ´Ù.
+
 ![](2021-05-09-13-35-18.png)
 
-## 11. ëª¨ë“  ë¸Œëžœì¹˜ë¥¼ ì´ì œ mainìœ¼ë¡œ rebase í•œë‹¤
+## 11. ¸ðµç ºê·£Ä¡¸¦ ÀÌÁ¦ mainÀ¸·Î rebase ÇÑ´Ù
+* ÀÌÁ¦ mergeµÈ homework_2¿¡ ÀÖ´Â°ÍµéÀ» ¸ðµÎ mainÀ¸·Î ÇÏ³ªÀÇ »óÅÂ·Î rebaseÇÑ´Ù.
+
 ![](2021-05-09-13-42-44.png)
 
-## 12. ë¸Œëžœì¹˜ pull 
+## 12. ºê·£Ä¡ pull 
 ![image](https://user-images.githubusercontent.com/61660260/117560919-18746e80-b0cd-11eb-93a9-0edb11625478.png)
