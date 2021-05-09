@@ -334,3 +334,6 @@ git clone https://github.com/DogGuyMan/GFM_Syntax
 ![](2021-05-09-13-26-34.png)
 
 ![](2021-05-09-13-29-23.png)
+
+## 10. 실험용으로 브랜치 만들고 merge한다
+![](2021-05-09-13-35-18.png)
