@@ -1,48 +1,82 @@
+<style>
+    *{
+        font-family : ariel, 'sans-serif';
+        margin-bottom :20px;
+        margin-top :20px;
+    }
+    #BGC{
+        background-color :red;
+        color:black;
+        font-size : 64px;
+        padding:20px;
+        }
+    .lime{color : red;}
+    .orange{color : #cf6d1d;}
+    #px32{font-size:32px;}
+    
+    table{
+        border:1px solid lightgray;
+        width: 100%;
+        table-layout :fixed;
+        border-collapse: collapse;
+    }
+    th{
+        background-color : red;
+        font-weight : bold;
+        color : black;
+    }
+    th, td
+    {
+        border:1px solid lightgray;
+        padding : 5px;
+    }
+</style>
+
 <div id="BGC"><strong>Basic Syntax</strong></div>
 
-# <span class="lime"><strong>ë¹„ì£¼ì–¼ ìŠ¤íŠœë””ì˜¤ ì½”ë“œì‚¬ìš©ë²•</strong> </span>
-* ì—ë””í„° ë·° : Ctrl+Shift+V 
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
-# <span class="lime"><strong>ì œëª©(header)</strong></span>
+# <span class="lime"><strong>ºñÁÖ¾ó ½ºÆ©µğ¿À ÄÚµå»ç¿ë¹ı</strong> </span>
+* ¿¡µğÅÍ ºä : Ctrl+Shift+V 
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
+# <span class="lime"><strong>Á¦¸ñ(header)</strong></span>
 
-### 1.ì œëª©ì„ í‘œí˜„í•  ë•Œ, (#)ì„ ì‹¬ë³¼ì„ ë‹¨ì–´, ë˜ëŠ” ë¬¸ì¥ì•ì— ì‚¬ìš©í•  ìˆ˜ìˆë‹¤. 
-* h1 ë¶€í„° h6 ê¹Œì§€ # ì˜ ê°œìˆ˜ë¡œ í‘œí˜„í•  ìˆ˜ìˆë‹¤.
-
-| Markdown | Output |
-|:---|:---|
-| # ì œëª© 1 | <h1>ì œëª© 1</h1> |
-| ## ì œëª© 2 | <h2>ì œëª© 2</h2> | 
-| ### ì œëª© 3 | <h3>ì œëª© 3</h3> | 
-| #### ì œëª© 4 | <h4>ì œëª© 4</h4> | 
-| ##### ì œëª© 5 | <h5>ì œëª© 5</h5> | 
-| ###### ì œëª© 6 | <h6>ì œëª© 6</h6> | 
-* (#) ì‹¬ë³¼ì„ ì‚¬ìš©í• ë•ŒëŠ” ê³µë°±ì´ í•œì¹¸ ìˆì–´ì•¼ ì ìš©ëœë‹¤.
-
-### 2.ë˜ ë‹¤ë¥¸ë°©ë²•ìœ¼ë¡œëŠ” (==) (--) ì‹¬ë³¼ì„ ì‚¬ìš©í•  ìˆ˜ìˆë‹¤.
-* ë‹¨, h1 íƒœê·¸ì™€ h2 íƒœê·¸ë§Œ í‘œí˜„ê°€ëŠ¥í•˜ë‹¤.
+### 1.Á¦¸ñÀ» Ç¥ÇöÇÒ ¶§, (#)À» ½Éº¼À» ´Ü¾î, ¶Ç´Â ¹®Àå¾Õ¿¡ »ç¿ëÇÒ ¼öÀÖ´Ù. 
+* h1 ºÎÅÍ h6 ±îÁö # ÀÇ °³¼ö·Î Ç¥ÇöÇÒ ¼öÀÖ´Ù.
 
 | Markdown | Output |
 |:---|:---|
-| ì œëª© 1<br>====| <h1>ì œëª© 1</h1>|
-| ì œëª© 2<br>-----| <h2>ì œëª© 2</h2>|
+| # Á¦¸ñ 1 | <h1>Á¦¸ñ 1</h1> |
+| ## Á¦¸ñ 2 | <h2>Á¦¸ñ 2</h2> | 
+| ### Á¦¸ñ 3 | <h3>Á¦¸ñ 3</h3> | 
+| #### Á¦¸ñ 4 | <h4>Á¦¸ñ 4</h4> | 
+| ##### Á¦¸ñ 5 | <h5>Á¦¸ñ 5</h5> | 
+| ###### Á¦¸ñ 6 | <h6>Á¦¸ñ 6</h6> | 
+* (#) ½Éº¼À» »ç¿ëÇÒ¶§´Â °ø¹éÀÌ ÇÑÄ­ ÀÖ¾î¾ß Àû¿ëµÈ´Ù.
 
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+### 2.¶Ç ´Ù¸¥¹æ¹ıÀ¸·Î´Â (==) (--) ½Éº¼À» »ç¿ëÇÒ ¼öÀÖ´Ù.
+* ´Ü, h1 ÅÂ±×¿Í h2 ÅÂ±×¸¸ Ç¥Çö°¡´ÉÇÏ´Ù.
 
-# <span class="lime"><strong>ë‹¨ë½ ë‚˜ëˆ„ê¸°(Paragraphs)
+| Markdown | Output |
+|:---|:---|
+| Á¦¸ñ 1<br>====| <h1>Á¦¸ñ 1</h1>|
+| Á¦¸ñ 2<br>-----| <h2>Á¦¸ñ 2</h2>|
+
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
+
+# <span class="lime"><strong>´Ü¶ô ³ª´©±â(Paragraphs)
 </strong></span>
-### ì—”í„°í‚¤ë¥¼ ì´ìš©í•´ ê³µë°±ìœ¼ë¡œ ë‹¨ë½ì„ ë‚˜ëˆŒìˆ˜ ìˆë‹¤.
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+### ¿£ÅÍÅ°¸¦ ÀÌ¿ëÇØ °ø¹éÀ¸·Î ´Ü¶ôÀ» ³ª´­¼ö ÀÖ´Ù.
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ì¤„ë°”ê¿ˆ(Line Breaks)
+# <span class="lime"><strong>ÁÙ¹Ù²Ş(Line Breaks)
 </strong></span>
 
-### br íƒœê·¸ë¥¼ ì´ìš©í•´ì„œ ì¤„ì„ ë°”ê¿€ìˆ˜ ìˆë‹¤.
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+### br ÅÂ±×¸¦ ÀÌ¿ëÇØ¼­ ÁÙÀ» ¹Ù²Ü¼ö ÀÖ´Ù.
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>í…ìŠ¤íŠ¸ ê°•ì¡°</strong></span>
-### 1.ë³¼ë“œ(Bold)
-* ë³¼ë“œì²´ë¥¼ ì ìš©ì‹œí‚¤ê³  ì‹¶ì€ ë¶€ë¶„ë¶€í„°, ì¢…ë£Œì ê¹Œì§€
-ì•„ë˜ì™€ ê°™ì€ ë°©ì‹ì„ ì‚¬ìš©í•˜ë©´ ëœë‹¤
+# <span class="lime"><strong>ÅØ½ºÆ® °­Á¶</strong></span>
+### 1.º¼µå(Bold)
+* º¼µåÃ¼¸¦ Àû¿ë½ÃÅ°°í ½ÍÀº ºÎºĞºÎÅÍ, Á¾·áÁ¡±îÁö
+¾Æ·¡¿Í °°Àº ¹æ½ÄÀ» »ç¿ëÇÏ¸é µÈ´Ù
 
 | Markdown | Output |
 |:---|:---|
@@ -50,10 +84,10 @@
 | I just love __ bold text__ |  I just love <strong>bold text</strong> | 
 | Love** is**bold | Love<strong>is</strong>bold</td> | 
 
-* ë‹¨, ë¬¸ì¥ ì¤‘ê°„ì„ ë³¼ë“œí• ë•Œ (__)ë¥¼ ì‚¬ìš©í•˜ë©´ ì•ˆëœë‹¤.
+* ´Ü, ¹®Àå Áß°£À» º¼µåÇÒ¶§ (__)¸¦ »ç¿ëÇÏ¸é ¾ÈµÈ´Ù.
 
-### 2.ì´í…”ë¦­ì²´(Italic)
-* ì´í…”ë¦­ì²´ë¥¼ ì ìš©ì‹œí‚¤ê³  ì‹¶ì€ ë¶€ë¶„ë¶€í„° ì¢…ë£Œì  ê¹Œì§€ ì•„ë˜ì™€ ê°™ì€ ë°©ì‹ì„ ì‚¬ìš©í•˜ë©´ ëœë‹¤.
+### 2.ÀÌÅÚ¸¯Ã¼(Italic)
+* ÀÌÅÚ¸¯Ã¼¸¦ Àû¿ë½ÃÅ°°í ½ÍÀº ºÎºĞºÎÅÍ Á¾·áÁ¡ ±îÁö ¾Æ·¡¿Í °°Àº ¹æ½ÄÀ» »ç¿ëÇÏ¸é µÈ´Ù.
 
 | Markdown | Output |
 |:---|:---|
@@ -61,16 +95,16 @@
 | Italicized text is the _ cat's meow_ |  Italicized text is the <em>cat's meow</em>. | 
 | A* cat*meow | A<em>cat</em>meow</td> | 
 
-* ë‹¨, ë¬¸ì¥ ì¤‘ê°„ì„ ì´í…”ë¦­ í• ë•Œ (_)ë¥¼ ì‚¬ìš©í•˜ë©´ ì•ˆëœë‹¤.
+* ´Ü, ¹®Àå Áß°£À» ÀÌÅÚ¸¯ ÇÒ¶§ (_)¸¦ »ç¿ëÇÏ¸é ¾ÈµÈ´Ù.
 
-### 3.ë³¼ë“œì™€ ì´í…”ë¦­ì„ ì„ì–´ì„œ ì‚¬ìš©í•  ìˆ˜ë„ ìˆë‹¤.
+### 3.º¼µå¿Í ÀÌÅÚ¸¯À» ¼¯¾î¼­ »ç¿ëÇÒ ¼öµµ ÀÖ´Ù.
 <br>
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# **<span class="lime">ì¸ìš©êµ¬(Blockquotes)</span>**
+# **<span class="lime">ÀÎ¿ë±¸(Blockquotes)</span>**
 
-### 1.ì¸ìš©êµ¬ë¥¼ ì‚¬ìš© í•˜ê¸° 
-* ìœ„í•´ì„œëŠ” ì ìš©í•˜ê³  ì‹¶ì€ ë¬¸ì¥, ê¸€ ì•ì— > ë¥¼ ì‚¬ìš©í•˜ë©´ ì ìš©ëœë‹¤.
+### 1.ÀÎ¿ë±¸¸¦ »ç¿ë ÇÏ±â 
+* À§ÇØ¼­´Â Àû¿ëÇÏ°í ½ÍÀº ¹®Àå, ±Û ¾Õ¿¡ > ¸¦ »ç¿ëÇÏ¸é Àû¿ëµÈ´Ù.
 
 ```markdown
 > Dorothy followed her through many of thebeautiful rooms in her castle.
@@ -78,8 +112,8 @@
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
 
-### 2.ì—¬ëŸ¬ ì¸ìš©êµ¬ ì ìš©í•˜ê¸°
-* ì¸ìš©êµ¬ë¥¼ ì—¬ëŸ¬ë²ˆ ì ìš©í•˜ê³  ì‹¶ë‹¤ë©´ ë‘ ë¬¸ì¥, ê¸€ ì‚¬ì´ì œ ê³µë°±ì¤„ì— > ë¥¼ ì¶”ê°€ì‹œí‚¨ë‹¤.
+### 2.¿©·¯ ÀÎ¿ë±¸ Àû¿ëÇÏ±â
+* ÀÎ¿ë±¸¸¦ ¿©·¯¹ø Àû¿ëÇÏ°í ½Í´Ù¸é µÎ ¹®Àå, ±Û »çÀÌÁ¦ °ø¹éÁÙ¿¡ > ¸¦ Ãß°¡½ÃÅ²´Ù.
 
 ```markdown
 > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -91,8 +125,8 @@
 >
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
-### 3.ì¤‘ì²©ëœ ì¸ìš©êµ¬ ì ìš©í•˜ê¸°
-* ì¤‘ì²© í•˜ê³  ì‹¶ì€ ìœ„ì¹˜ì— >> ë¥¼ ì‚¬ìš©í•˜ë©´ ëœë‹¤.
+### 3.ÁßÃ¸µÈ ÀÎ¿ë±¸ Àû¿ëÇÏ±â
+* ÁßÃ¸ ÇÏ°í ½ÍÀº À§Ä¡¿¡ >> ¸¦ »ç¿ëÇÏ¸é µÈ´Ù.
 
 ```markdown
 > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -104,9 +138,9 @@
 >
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
-### 4.ì¸ìš©êµ¬ ë‚´ë¶€ì— ë‹¤ë¥¸ ì›ì†Œ ì¶”ê°€ì‹œí‚¤ê¸°.
+### 4.ÀÎ¿ë±¸ ³»ºÎ¿¡ ´Ù¸¥ ¿ø¼Ò Ãß°¡½ÃÅ°±â.
 
-* ì¸ìš©êµ¬ ë‚´ë¶€ì— ì—¬íƒœ ë°°ìš´ "ì œëª©" "ë³¼ë“œ" "ì´í…”ë¦­ì²´" ë“±ë“±, íŠ¹ì • ë§ˆí¬ë‹¤ìš´ ìš”ì†Œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤. 
+* ÀÎ¿ë±¸ ³»ºÎ¿¡ ¿©ÅÂ ¹è¿î "Á¦¸ñ" "º¼µå" "ÀÌÅÚ¸¯Ã¼" µîµî, Æ¯Á¤ ¸¶Å©´Ù¿î ¿ä¼Ò¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù. 
 
 ```markdown
 > ## **The quarterly results look great!**
@@ -124,44 +158,44 @@
 >
 >  *Everything* is going according to **plan**.
 The rendered output looks like this:
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ë¦¬ìŠ¤íŠ¸(Lists)</strong></span>
-### ë¦¬ìŠ¤íŠ¸ì—ëŠ” ìˆœì„œë¦¬ìŠ¤íŠ¸ì™€ ë¹„ìˆœì„œë¦¬ìŠ¤íŠ¸ê°€ ìˆë‹¤.
+# <span class="lime"><strong>¸®½ºÆ®(Lists)</strong></span>
+### ¸®½ºÆ®¿¡´Â ¼ø¼­¸®½ºÆ®¿Í ºñ¼ø¼­¸®½ºÆ®°¡ ÀÖ´Ù.
 
-* ì¸ìš©êµ¬(Blockquotes)ì™€ ë‹¨ë½ ë‚˜ëˆ„ê¸°(Paragraphs)ë¥¼ ì ìš©ì‹œí‚¬ ìˆ˜ ìˆë‹¤.
+* ÀÎ¿ë±¸(Blockquotes)¿Í ´Ü¶ô ³ª´©±â(Paragraphs)¸¦ Àû¿ë½ÃÅ³ ¼ö ÀÖ´Ù.
 
-1. **ìˆœì„œë¦¬ìŠ¤íŠ¸**
-    * ìˆœì„œë¦¬ìŠ¤íŠ¸ëŠ” ë¦¬ìŠ¤íŠ¸ì— ë²ˆí˜¸ê°€ ë§¤ê²¨ì§€ëŠ” ë¦¬ìŠ¤íŠ¸ ì´ë‹¤.
-    * ì ìš© ì‹œí‚¤ë ¤ë©´ (ë²ˆí˜¸). ë¥¼ ì ê³  í•œì¹¸ ë„ê³ ë‚œë’¤ ë‚´ìš©ì„ ì ìœ¼ë©´ ëœë‹¤.
-        * ë‹¨, ì–´ë–¤ ìˆ«ìë¥¼ ì ë“  ë§ˆí¬ë‹¤ìš´ í™”ë©´ì—ëŠ” 1,2,3... ìˆœì„œë¡œ ì°¨ë¡€ëŒ€ë¡œ í‘œì‹œëœë‹¤.
-        * ìˆœì„œ ë¦¬ìŠ¤íŠ¸ ë‚´ë¶€ì— ì¶©ì²©ìœ¼ë¡œ ë¦¬ìŠ¤íŠ¸ë¥¼ ì ìš© í•  ìˆ˜ìˆë‹¤.
-    * ')'ë¥¼ ì‚¬ìš©í•˜ë©´ ì•ˆëœë‹¤.
+1. **¼ø¼­¸®½ºÆ®**
+    * ¼ø¼­¸®½ºÆ®´Â ¸®½ºÆ®¿¡ ¹øÈ£°¡ ¸Å°ÜÁö´Â ¸®½ºÆ® ÀÌ´Ù.
+    * Àû¿ë ½ÃÅ°·Á¸é (¹øÈ£). ¸¦ Àû°í ÇÑÄ­ ¶ç°í³­µÚ ³»¿ëÀ» ÀûÀ¸¸é µÈ´Ù.
+        * ´Ü, ¾î¶² ¼ıÀÚ¸¦ Àûµç ¸¶Å©´Ù¿î È­¸é¿¡´Â 1,2,3... ¼ø¼­·Î Â÷·Ê´ë·Î Ç¥½ÃµÈ´Ù.
+        * ¼ø¼­ ¸®½ºÆ® ³»ºÎ¿¡ ÃæÃ¸À¸·Î ¸®½ºÆ®¸¦ Àû¿ë ÇÒ ¼öÀÖ´Ù.
+    * ')'¸¦ »ç¿ëÇÏ¸é ¾ÈµÈ´Ù.
 
 | Markdown | Output |
 |:---|:---|
 | 1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item| 1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item|
-|1. First item<br>2. Second item<br>3. Third item <br> (ê³µë°±) 1. Indented item<br>(ê³µë°±) 2. Indented item <br>4. Fourth item|<ol><li>First item</li><li>Second item</li><li>Third item<ol><li>Indented item</li><li>Indented item</li></ol></li><li>Fourth item</li></ol>|
+|1. First item<br>2. Second item<br>3. Third item <br> (°ø¹é) 1. Indented item<br>(°ø¹é) 2. Indented item <br>4. Fourth item|<ol><li>First item</li><li>Second item</li><li>Third item<ol><li>Indented item</li><li>Indented item</li></ol></li><li>Fourth item</li></ol>|
 
-2. **ë¹„ìˆœì„œ ë¦¬ìŠ¤íŠ¸**
-* ë¹„ìˆœì„œ ë¦¬ìŠ¤íŠ¸ëŠ” ë¦¬ìŠ¤íŠ¸ì— â—‹,â—,â–  ì‹¬ë³¼ë¡œ ë§¤ê²¨ì§€ëŠ” ë¦¬ìŠ¤íŠ¸ì´ë‹¤.
-    * ì ìš© ì‹œí‚¤ë ¤ë©´ *, +, - ë¥¼ ì ê³  í•œì¹¸ ë„ê³ ë‚œë’¤ ë‚´ìš©ì„ ì ìœ¼ë©´ ëœë‹¤.
-        * ë¹„ìˆœì„œ ë¦¬ìŠ¤íŠ¸ ë‚´ë¶€ì— ì¶©ì²©ìœ¼ë¡œ ë¦¬ìŠ¤íŠ¸ë¥¼ ì ìš© í•  ìˆ˜ìˆë‹¤.
-    * *, +, -ë¥¼ ì¼ê´€ì„± ìˆê²Œ ì‚¬ìš©í•´ì•¼ í•œë‹¤.
+2. **ºñ¼ø¼­ ¸®½ºÆ®**
+* ºñ¼ø¼­ ¸®½ºÆ®´Â ¸®½ºÆ®¿¡ ¡Û,¡Ü,¡á ½Éº¼·Î ¸Å°ÜÁö´Â ¸®½ºÆ®ÀÌ´Ù.
+    * Àû¿ë ½ÃÅ°·Á¸é *, +, - ¸¦ Àû°í ÇÑÄ­ ¶ç°í³­µÚ ³»¿ëÀ» ÀûÀ¸¸é µÈ´Ù.
+        * ºñ¼ø¼­ ¸®½ºÆ® ³»ºÎ¿¡ ÃæÃ¸À¸·Î ¸®½ºÆ®¸¦ Àû¿ë ÇÒ ¼öÀÖ´Ù.
+    * *, +, -¸¦ ÀÏ°ü¼º ÀÖ°Ô »ç¿ëÇØ¾ß ÇÑ´Ù.
 
 | Markdown | Output |
 |:---|:---|
 |:- First item<br>- Second item<br>- Third item<br>- Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
 |+ First item<br>+ Second item<br>+ Third item<br>+ Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
 |* First item<br>* Second item<br>* Third item<br>* Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
-|:- First item<br>- Second item<br>- Third item<br>(ê³µë°±) - Indented item<br>(ê³µë°±) - Indented item<br>- Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul>|
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+|:- First item<br>- Second item<br>- Third item<br>(°ø¹é) - Indented item<br>(°ø¹é) - Indented item<br>- Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul>|
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ì½”ë“œë¸”ëŸ­</strong></span>
+# <span class="lime"><strong>ÄÚµåºí·°</strong></span>
 
-### í•˜ë‚˜ì˜ íƒ­, ë˜ëŠ” 4ë²ˆì˜ ê³µë°±ìœ¼ë¡œ ì½”ë“œë¸”ëŸ­ì„ ì ìš© ì‹œí‚¬ìˆ˜ ìˆë‹¤.
+### ÇÏ³ªÀÇ ÅÇ, ¶Ç´Â 4¹øÀÇ °ø¹éÀ¸·Î ÄÚµåºí·°À» Àû¿ë ½ÃÅ³¼ö ÀÖ´Ù.
 
-**ì˜ˆì‹œ**
+**¿¹½Ã**
 
 ```markdown
     1.  Open the file.
@@ -173,7 +207,7 @@ The rendered output looks like this:
     3.  Update the title to match the name of your website.
 ```
 
-ì•„ë˜ëŠ” ì ìš©ëœ ëª¨ìŠµì´ë‹¤.
+¾Æ·¡´Â Àû¿ëµÈ ¸ğ½ÀÀÌ´Ù.
 
 ---
 1.  Open the file.
@@ -186,32 +220,32 @@ The rendered output looks like this:
 
 3.  Update the title to match the name of your website.
 ---
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ê²½ê³„ì„ (Horizontal Rules)</strong></span>
+# <span class="lime"><strong>°æ°è¼±(Horizontal Rules)</strong></span>
 
-*** ë˜ëŠ” --- ë˜ëŠ” ___ ìœ¼ë¡œ ê²½ê³„ì„ ì„ ì ìš© ì‹œí‚¬ìˆ˜ ìˆë‹¤.
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+*** ¶Ç´Â --- ¶Ç´Â ___ À¸·Î °æ°è¼±À» Àû¿ë ½ÃÅ³¼ö ÀÖ´Ù.
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ì´ë¯¸ì§€ ì ìš© & ë§í¬ ì ìš©</strong></span>
+# <span class="lime"><strong>ÀÌ¹ÌÁö Àû¿ë & ¸µÅ© Àû¿ë</strong></span>
 
 
-### <span>1. ë§í¬ ì ìš© : "!\[]\();"</span>
+### <span>1. ¸µÅ© Àû¿ë : "!\[]\();"</span>
 
  ```markdown
- ![í‘œì‹œ](ìƒëŒ€ê²½ë¡œ í˜¹ì€ ì ˆëŒ€ê²½ë¡œ) /// ì´ë¯¸ì§€ ì ìš©
+ ![Ç¥½Ã](»ó´ë°æ·Î È¤Àº Àı´ë°æ·Î) /// ÀÌ¹ÌÁö Àû¿ë
  -> ![lime](https://techcrunch.com/wp-content/uploads/2015/05/limes-e1431965418433.jpg?w=1390&crop=1)
 ```
 
-### <span>2. ë§í¬ ì ìš© : "\[]\();"</span> 
+### <span>2. ¸µÅ© Àû¿ë : "\[]\();"</span> 
 
 ```markdown
- [í‘œì‹œ](ì›¹ì£¼ì†Œ, ìƒëŒ€ê²½ë¡œ í˜¹ì€ ì ˆëŒ€ê²½ë¡œ)/// ë§í¬ì ìš©
+ [Ç¥½Ã](À¥ÁÖ¼Ò, »ó´ë°æ·Î È¤Àº Àı´ë°æ·Î)/// ¸µÅ©Àû¿ë
  -> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 ```
 
 ---
-ì•„ë˜ëŠ” ì ìš©ëœ ëª¨ìŠµì´ë‹¤.
+¾Æ·¡´Â Àû¿ëµÈ ¸ğ½ÀÀÌ´Ù.
 
 ---
 ![lime](https://techcrunch.com/wp-content/uploads/2015/05/limes-e1431965418433.jpg?w=1390&crop=1)
@@ -219,41 +253,41 @@ The rendered output looks like this:
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 ---
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
 # <span class="lime"><strong>URLs & Email Addresses</strong></span>
-### <>ë¥¼ ê°ì‹¼ë’¤ì— ê·¸ ì•ˆì— ULR, Email ì£¼ì†Œë¥¼ ì‘ì„±í•œë‹¤.
+### <>¸¦ °¨½ÑµÚ¿¡ ±× ¾È¿¡ ULR, Email ÁÖ¼Ò¸¦ ÀÛ¼ºÇÑ´Ù.
 
 ```markdown
 <https://felipuss.tistory.com/>
 <fake@example.com>
 ```
 
-ì•„ë˜ëŠ” ì ìš©ëœ ëª¨ìŠµì´ë‹¤.
+¾Æ·¡´Â Àû¿ëµÈ ¸ğ½ÀÀÌ´Ù.
 
 ---
 <https://felipuss.tistory.com/> <br>
 <fake@example.com>
 
 ---
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>Escapeë¬¸</strong></span>
+# <span class="lime"><strong>Escape¹®</strong></span>
 
 ### backslash to escape the following characters
 
-* í‰ì†Œì— ê·¸ëƒ¥ ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” íŠ¹ìˆ˜ë¬¸ìë¥¼ \ (ë°±ìŠ¬ë˜ì‰¬)ë¥¼ ì´ìš©í•´ íŠ¹ë¬¸í‘œí˜„ì´ ê°€ëŠ¥í•˜ë‹¤.
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+* Æò¼Ò¿¡ ±×³É »ç¿ëÇÒ ¼ö ¾ø´Â Æ¯¼ö¹®ÀÚ¸¦ \ (¹é½½·¡½¬)¸¦ ÀÌ¿ëÇØ Æ¯¹®Ç¥ÇöÀÌ °¡´ÉÇÏ´Ù.
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>HTML ë¬¸ë²• ì‚¬ìš©</strong></span>
-### 1.ë§ˆí¬ë‹¤ìš´ ì–¸ì–´ëŠ” HTMLë˜í•œ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤.
-### 2. < style> íƒœê·¸ë¡œ ê¸€ìì˜ ìƒ‰,í¬ê¸°, ë“±ë“± CSSë¬¸ë²•ì„ ì‚¬ìš©í•  ìˆ˜ìˆë‹¤.
+# <span class="lime"><strong>HTML ¹®¹ı »ç¿ë</strong></span>
+### 1.¸¶Å©´Ù¿î ¾ğ¾î´Â HTML¶ÇÇÑ »ç¿ë °¡´ÉÇÏ´Ù.
+### 2. < style> ÅÂ±×·Î ±ÛÀÚÀÇ »ö,Å©±â, µîµî CSS¹®¹ıÀ» »ç¿ëÇÒ ¼öÀÖ´Ù.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png)
 
 <div id="BGC"><strong>GFM Syntax</strong></div>
 
 
-# <span class="lime"><strong>ì½”ë“œë¸”ëŸ­(Code Block)</strong></span>
+# <span class="lime"><strong>ÄÚµåºí·°(Code Block)</strong></span>
 ```markdown
     ```(language)
     ```
@@ -274,45 +308,45 @@ ____________________________
 ```
 ____________________________
 
-# <span class="lime"><strong>í‘œë§Œë“¤ê¸°</strong></span>
+# <span class="lime"><strong>Ç¥¸¸µé±â</strong></span>
 
-### 1. '|' ë¡œ ì¼ë‹¨ í‘œë¥¼ ë‚˜ëˆˆë‹¤.
-* | ìœ¼ë¡œ ë‚˜ëˆˆê²ƒë§Œí¼ ì—´ì„ ìƒì„±í•  ìˆ˜ê°€ ìˆë‹¤
-### 2. '---' ë¡œ ë¨¸ë¦¬ê¸€ í–‰ì„ í‘œì‹œí•œë‹¤.
-* |:---| ëŠ” ì™¼ìª½ì •ë ¬
-* |---:| ëŠ” ì˜¤ë¥¸ìª½ ì •ë ¬
-* |:---:| ëŠ” ê°€ìš´ë° ì •ë ¬
+### 1. '|' ·Î ÀÏ´Ü Ç¥¸¦ ³ª´«´Ù.
+* | À¸·Î ³ª´«°Í¸¸Å­ ¿­À» »ı¼ºÇÒ ¼ö°¡ ÀÖ´Ù
+### 2. '---' ·Î ¸Ó¸®±Û ÇàÀ» Ç¥½ÃÇÑ´Ù.
+* |:---| ´Â ¿ŞÂÊÁ¤·Ä
+* |---:| ´Â ¿À¸¥ÂÊ Á¤·Ä
+* |:---:| ´Â °¡¿îµ¥ Á¤·Ä
 
 ```markdown
 | Markdown | Output |
 |:---|:---|
 ```
 
-### 3. ì´ì œ í•œì¤„ í•œì¤„ í–‰ì„ ì„¤ì •í•  ìˆ˜ ìˆë‹¤. 
+### 3. ÀÌÁ¦ ÇÑÁÙ ÇÑÁÙ ÇàÀ» ¼³Á¤ÇÒ ¼ö ÀÖ´Ù. 
 
 ```markdown
-| # ì œëª© 1 | <h1>ì œëª© 1</h1> |
-| ## ì œëª© 2 | <h2>ì œëª© 2</h2> | 
+| # Á¦¸ñ 1 | <h1>Á¦¸ñ 1</h1> |
+| ## Á¦¸ñ 2 | <h2>Á¦¸ñ 2</h2> | 
 ```
 
-ì•„ë˜ëŠ” ì ìš©ëœ ëª¨ìŠµì´ë‹¤.
+¾Æ·¡´Â Àû¿ëµÈ ¸ğ½ÀÀÌ´Ù.
 
 ---
 
 | Markdown | Output |
 |:---|:---|
-| ## ì œëª© 2 | <h2>ì œëª© 2</h2> |
-| ### ì œëª© 3 | <h3>ì œëª© 3</h3> | 
+| ## Á¦¸ñ 2 | <h2>Á¦¸ñ 2</h2> |
+| ### Á¦¸ñ 3 | <h3>Á¦¸ñ 3</h3> | 
 
 ---
 
 
-# <span class="lime"><strong>ì²´í¬ë°”(Task lists)
+# <span class="lime"><strong>Ã¼Å©¹Ù(Task lists)
 </strong></span>
 
-### 1.ì²´í¬ë°”ë¥¼ ìƒì„±í•˜ê¸° ìœ„í•´ì„  '-' ìœ¼ë¡œ ë¦¬ìŠ¤íŠ¸ë¥¼ ìƒì„±í•˜ê³  ëŒ€ê´„í˜¸ë¥¼ ì‘ì„±í•œë‹¤.
- * [x] : ì²´í¬ í‘œì‹œ
- * [] : ì²´í¬ ì•ˆë¨
+### 1.Ã¼Å©¹Ù¸¦ »ı¼ºÇÏ±â À§ÇØ¼± '-' À¸·Î ¸®½ºÆ®¸¦ »ı¼ºÇÏ°í ´ë°ıÈ£¸¦ ÀÛ¼ºÇÑ´Ù.
+ * [x] : Ã¼Å© Ç¥½Ã
+ * [] : Ã¼Å© ¾ÈµÊ
 
 ```markdown
 - [x] Finish my changes
@@ -323,15 +357,15 @@ ____________________________
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
 
-### 2.ê´„í˜¸ë¥¼ ì‘ì„±í•˜ê¸° ìœ„í•´ ì´ìŠ¤ì¼€ì´í”„ë¬¸ '\\'ë¥¼ ì‚¬ìš©í•œë’¤ ê´„í˜¸ë¥¼ ì ìš©í•˜ë©´ ëœë‹¤.
+### 2.°ıÈ£¸¦ ÀÛ¼ºÇÏ±â À§ÇØ ÀÌ½ºÄÉÀÌÇÁ¹® '\\'¸¦ »ç¿ëÇÑµÚ °ıÈ£¸¦ Àû¿ëÇÏ¸é µÈ´Ù.
 
 ```markdown
 - [ ] \(Optional) Open a followup issue
 ```
 
-<!-- ë§ˆí¬ë‹¤ìš´ìœ¼ë¡œ ì£¼ì„ ì²˜ë¦¬ ê°€ëŠ¥ -->
+<!-- ¸¶Å©´Ù¿îÀ¸·Î ÁÖ¼® Ã³¸® °¡´É -->
 
-# <span class="lime"><strong>ì–¸ê¸‰ê¸°ëŠ¥(Mentioning people & teams)
+# <span class="lime"><strong>¾ğ±Ş±â´É(Mentioning people & teams)
 </strong></span>
 
 ### 1. You can mention a person or team on GitHub  
@@ -354,10 +388,10 @@ Visit https://github.com
 ### 2. Issues and pull requests
 * Within conversations on GitHub, references to issues and pull requests are automatically converted to shortened links.
 
-|Reference type	 |Raw reference	 |Short link |
+|Reference type  |Raw reference  |Short link |
 |:---|:---|:---|
-|Issue or pull request URL|	https://github.com/jlord/sheetsee.js/issues/26|	#26|
-| # and issue or pull request number| #26	| #26 |
+|Issue or pull request URL| https://github.com/jlord/sheetsee.js/issues/26| #26|
+| # and issue or pull request number| #26   | #26 |
 |GH- and issue or pull request number| GH-26| GH-26|
 
 #1
@@ -367,26 +401,26 @@ mojombo/github-flavored-markdown#1
 ### 3.Commit SHAs
 * References to a commit's SHA hash are automatically converted into shortened links to the commit on GitHub.
 
-|Reference type	|Raw reference	|Short link|
+|Reference type |Raw reference  |Short link|
 |:---|:---|:---|
-|Commit URL	|https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e	|a5c3785|
-|SHA|	a5c3785ed8d6a35868bc169f07e40e889087fd2e|	a5c3785|
-|User@SHA|	jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e|jlord@a5c3785|
+|Commit URL |https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e   |a5c3785|
+|SHA|   a5c3785ed8d6a35868bc169f07e40e889087fd2e|   a5c3785|
+|User@SHA|  jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e|jlord@a5c3785|
 
 16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
-# <span class="lime"><strong>ì·¨ì†Œì„ (Strikethrough)<strong></span>
-### 1. '~~' ì„ ì·¨ì†Œì„ ì„ ì ìš©í•  ë²”ìœ„ë§ˆë‹¤ ì•ë’¤ë¡œ ì ì–´ì£¼ë©´ ì ìš©ëœë‹¤.
+# <span class="lime"><strong>Ãë¼Ò¼±(Strikethrough)<strong></span>
+### 1. '~~' À» Ãë¼Ò¼±À» Àû¿ëÇÒ ¹üÀ§¸¶´Ù ¾ÕµÚ·Î Àû¾îÁÖ¸é Àû¿ëµÈ´Ù.
 
-    ~~ì•ˆë…•í•˜ì„¸ìš”~~
+    ~~¾È³çÇÏ¼¼¿ä~~
 
-~~ì•ˆë…•í•˜ì„¸ìš”~~
+~~¾È³çÇÏ¼¼¿ä~~
 
-# <span class="lime"><strong>ì´ëª¨í‹°ì½˜ ì‚¬ìš©(Emoji)<strong></span>
+# <span class="lime"><strong>ÀÌ¸ğÆ¼ÄÜ »ç¿ë(Emoji)<strong></span>
 
-### ë¬¸ì¥ ì‚¬ì´ì— ì‚¬ìš©í•˜ê³  ì‹¶ì€ ì´ëª¨í‹°ì½˜ì˜ [Emojicode](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) ë¥¼ :ë¡œ ê°ì‹¸ë©´ì„œ ì‚¬ìš©í•œë‹¤.
+### ¹®Àå »çÀÌ¿¡ »ç¿ëÇÏ°í ½ÍÀº ÀÌ¸ğÆ¼ÄÜÀÇ [Emojicode](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) ¸¦ :·Î °¨½Î¸é¼­ »ç¿ëÇÑ´Ù.
 
 
 ```markdown
@@ -398,3 +432,5 @@ mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
+# <span class="lime"><strong>GITHUB URL<strong></span>
+https://github.com/DogGuyMan/GFM_Syntax/blob/main/README.md
