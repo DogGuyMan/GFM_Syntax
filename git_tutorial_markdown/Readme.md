@@ -318,3 +318,8 @@ git clone https://github.com/DogGuyMan/GFM_Syntax
 <img src = "±ê add.PNG" width="100%"><br>
 <img src = "±ê commit.PNG" width="100%"><br>
 
+## 7.º¯°æÁ¡ È®ÀÎ
+![](2021-05-09-13-10-47.png)
+
+## 8.±ê ·Î±×
+![](2021-05-09-13-17-34.png)
