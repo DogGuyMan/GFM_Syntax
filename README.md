@@ -1,436 +1,342 @@
-<style>
-    *{
-        font-family : ariel, 'sans-serif';
-        margin-bottom :20px;
-        margin-top :20px;
-    }
-    #BGC{
-        background-color :red;
-        color:black;
-        font-size : 64px;
-        padding:20px;
-        }
-    .lime{color : red;}
-    .orange{color : #cf6d1d;}
-    #px32{font-size:32px;}
+https://github.com/DogGuyMan/GFM_Syntax
+
+----------
+# Git
+## 1. git의 기초
+**정의** : 모든 파일 버젼을 관리하게 도와주는 오픈 소스다
+
+git을 몰랐던 상태에서는 여러 파일의 수정본을 어떻게 관리했을까?
+
+![](2021-05-09-07-28-30.png)
+
+아마 이런식으로 관리 했었을것이다. 
+
+하지만 위의 그림처럼 규칙 없이 이름이 마음대로 붙여진경우 어떤것이 수정되었는지 알수가 없다
+
+스냅샷이라는 데이터 처리로 저용량으로 빠르고 간편하게 버젼관리를 할 수 있다.
+
+----------
+## 2. git의 "상태"
+
+세 가지 상태
+Git은 파일을 Committed, Modified, Staged 이렇게 세 가지 상태로 관리한다.
+
+1. Committed<br>
+데이터가 로컬 데이터베이스에 안전하게 저장됐다는 것을 의미한다.
+Git 디렉토리에 있는 파일들은 Committed 상태이다. 
+
+2. Modified<br> 수정한 파일을 아직 로컬 데이터베이스에 커밋하지 않은 것을 말한다.
+<br>아직 Staging Area에 추가하지 않았으면 Modified이다.
+
+3. Staged<br> 
+현재 수정한 파일을 곧 커밋할 것이라고 표시한 상태를 의미한다.<br>파일을 수정하고 Staging Area에 추가했다면 Staged이다.
+
+----------
+## 3. git의 단계
+![](2021-05-09-06-48-35.png)
+
+Git이 하는 일은
+1. 워킹 트리에서 파일을 수정한다. 워킹 트리는 프로젝트의 특정 버전을 Checkout 한 것이다. 
+
+2. Staging Area에 파일을 Stage 해서 커밋할 스냅샷을 만든다. 모든 파일을 추가할 수도 있고 선택하여 추가할 수도 있다.
+
+3. Staging Area에 있는 파일들을 커밋해서 Git 디렉토리에 영구적인 스냅샷으로 저장한다.
+
+-------
+## 4. 워킹 디렉토리
+**워킹 디렉토리**는 모든 파일은 크게 *Tracked(관리대상임)* 와 *Untracked(관리대상이 아님)* 로 나눈다.
+
+![](2021-05-09-06-49-35.png)
+
+1. Tracked 파일은 이미 스냅샷에 포함돼 있던 파일이다. Modified(수정함) 그리고 Staged(커밋으로 저장소에 기록할) 상태 중 하나이다. 
+
+2. Untracked 파일은 워킹 디렉토리에 있는 파일 중 스냅샷에도 Staging Area에도 포함되지 않은 파일이다. 
+
+### **git congif**
+Git의 사용 환경을 설정해 주는 명령어 이다. 한 번만 설정하면 된다. 
+
+* 언제든지 다시 바꿀 수 있다.
+    * git config라는 도구로 설정 내용을 확인하고 변경할 수 있다. Git은 이 설정에 따라 동작한다. 이때 사용하는 설정 파일은 세 가지나 된다.
     
-    table{
-        border:1px solid lightgray;
-        width: 100%;
-        table-layout :fixed;
-        border-collapse: collapse;
-    }
-    th{
-        background-color : red;
-        font-weight : bold;
-        color : black;
-    }
-    th, td
-    {
-        border:1px solid lightgray;
-        padding : 5px;
-    }
-</style>
-
-<div id="BGC"><strong>Basic Syntax</strong></div>
-
-# <span class="lime"><strong>비주얼 스튜디오 코드사용법</strong> </span>
-* 에디터 뷰 : Ctrl+Shift+V 
-<!-- 마크다운으로 주석 처리 가능 -->
-# <span class="lime"><strong>제목(header)</strong></span>
-
-### 1.제목을 표현할 때, (#)을 심볼을 단어, 또는 문장앞에 사용할 수있다. 
-* h1 부터 h6 까지 # 의 개수로 표현할 수있다.
-
-| Markdown | Output |
-|:---|:---|
-| # 제목 1 | <h1>제목 1</h1> |
-| ## 제목 2 | <h2>제목 2</h2> | 
-| ### 제목 3 | <h3>제목 3</h3> | 
-| #### 제목 4 | <h4>제목 4</h4> | 
-| ##### 제목 5 | <h5>제목 5</h5> | 
-| ###### 제목 6 | <h6>제목 6</h6> | 
-* (#) 심볼을 사용할때는 공백이 한칸 있어야 적용된다.
-
-### 2.또 다른방법으로는 (==) (--) 심볼을 사용할 수있다.
-* 단, h1 태그와 h2 태그만 표현가능하다.
-
-| Markdown | Output |
-|:---|:---|
-| 제목 1<br>====| <h1>제목 1</h1>|
-| 제목 2<br>-----| <h2>제목 2</h2>|
-
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>단락 나누기(Paragraphs)
-</strong></span>
-### 엔터키를 이용해 공백으로 단락을 나눌수 있다.
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>줄바꿈(Line Breaks)
-</strong></span>
-
-### br 태그를 이용해서 줄을 바꿀수 있다.
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>텍스트 강조</strong></span>
-### 1.볼드(Bold)
-* 볼드체를 적용시키고 싶은 부분부터, 종료점까지
-아래와 같은 방식을 사용하면 된다
-
-| Markdown | Output |
-|:---|:---|
-| I just love ** bold text** | I just love <strong>bold text</strong> |
-| I just love __ bold text__ |  I just love <strong>bold text</strong> | 
-| Love** is**bold | Love<strong>is</strong>bold</td> | 
-
-* 단, 문장 중간을 볼드할때 (__)를 사용하면 안된다.
-
-### 2.이텔릭체(Italic)
-* 이텔릭체를 적용시키고 싶은 부분부터 종료점 까지 아래와 같은 방식을 사용하면 된다.
-
-| Markdown | Output |
-|:---|:---|
-| Italicized text is the * cat's meow*</span> | Italicized text is the <em>cat's meow</em>. |
-| Italicized text is the _ cat's meow_ |  Italicized text is the <em>cat's meow</em>. | 
-| A* cat*meow | A<em>cat</em>meow</td> | 
-
-* 단, 문장 중간을 이텔릭 할때 (_)를 사용하면 안된다.
-
-### 3.볼드와 이텔릭을 섞어서 사용할 수도 있다.
-<br>
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# **<span class="lime">인용구(Blockquotes)</span>**
-
-### 1.인용구를 사용 하기 
-* 위해서는 적용하고 싶은 문장, 글 앞에 > 를 사용하면 적용된다.
-
-```markdown
-> Dorothy followed her through many of thebeautiful rooms in her castle.
-```
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-### 2.여러 인용구 적용하기
-* 인용구를 여러번 적용하고 싶다면 두 문장, 글 사이제 공백줄에 > 를 추가시킨다.
-
-```markdown
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-### 3.중첩된 인용구 적용하기
-* 중첩 하고 싶은 위치에 >> 를 사용하면 된다.
-
-```markdown
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
->> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
->> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-### 4.인용구 내부에 다른 원소 추가시키기.
-
-* 인용구 내부에 여태 배운 "제목" "볼드" "이텔릭체" 등등, 특정 마크다운 요소를 사용할 수 있다. 
-
-```markdown
-> ## **The quarterly results look great!**
->
-> - Revenue was off the chart.
-> - Profits were higher than ever.
->
->  *Everything* is going according to **plan**.
-```
-
-> ## **The quarterly results look great!**
->
-> - Revenue was off the chart.
-> - Profits were higher than ever.
->
->  *Everything* is going according to **plan**.
-The rendered output looks like this:
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>리스트(Lists)</strong></span>
-### 리스트에는 순서리스트와 비순서리스트가 있다.
-
-* 인용구(Blockquotes)와 단락 나누기(Paragraphs)를 적용시킬 수 있다.
-
-1. **순서리스트**
-    * 순서리스트는 리스트에 번호가 매겨지는 리스트 이다.
-    * 적용 시키려면 (번호). 를 적고 한칸 띄고난뒤 내용을 적으면 된다.
-        * 단, 어떤 숫자를 적든 마크다운 화면에는 1,2,3... 순서로 차례대로 표시된다.
-        * 순서 리스트 내부에 충첩으로 리스트를 적용 할 수있다.
-    * ')'를 사용하면 안된다.
-
-| Markdown | Output |
-|:---|:---|
-| 1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item| 1. First item<br>2. Second item<br>3. Third item<br>4. Fourth item|
-|1. First item<br>2. Second item<br>3. Third item <br> (공백) 1. Indented item<br>(공백) 2. Indented item <br>4. Fourth item|<ol><li>First item</li><li>Second item</li><li>Third item<ol><li>Indented item</li><li>Indented item</li></ol></li><li>Fourth item</li></ol>|
-
-2. **비순서 리스트**
-* 비순서 리스트는 리스트에 ○,●,■ 심볼로 매겨지는 리스트이다.
-    * 적용 시키려면 *, +, - 를 적고 한칸 띄고난뒤 내용을 적으면 된다.
-        * 비순서 리스트 내부에 충첩으로 리스트를 적용 할 수있다.
-    * *, +, -를 일관성 있게 사용해야 한다.
-
-| Markdown | Output |
-|:---|:---|
-|:- First item<br>- Second item<br>- Third item<br>- Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
-|+ First item<br>+ Second item<br>+ Third item<br>+ Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
-|* First item<br>* Second item<br>* Third item<br>* Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul>|
-|:- First item<br>- Second item<br>- Third item<br>(공백) - Indented item<br>(공백) - Indented item<br>- Fourth item|<ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul>|
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>코드블럭</strong></span>
-
-### 하나의 탭, 또는 4번의 공백으로 코드블럭을 적용 시킬수 있다.
-
-**예시**
-
-```markdown
-    1.  Open the file.
-    2.  Find the following code block on line
-        <html>
-          <head>
-            <title>Test</title>
-          </head>
-    3.  Update the title to match the name of your website.
-```
-
-아래는 적용된 모습이다.
-
----
-1.  Open the file.
-2.  Find the following code block on line 21:
-
-        <html>
-          <head>
-            <title>Test</title>
-          </head>
-
-3.  Update the title to match the name of your website.
----
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>경계선(Horizontal Rules)</strong></span>
-
-*** 또는 --- 또는 ___ 으로 경계선을 적용 시킬수 있다.
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>이미지 적용 & 링크 적용</strong></span>
-
-
-### <span>1. 링크 적용 : "!\[]\();"</span>
-
- ```markdown
- ![표시](상대경로 혹은 절대경로) /// 이미지 적용
- -> ![lime](https://techcrunch.com/wp-content/uploads/2015/05/limes-e1431965418433.jpg?w=1390&crop=1)
-```
-
-### <span>2. 링크 적용 : "\[]\();"</span> 
-
-```markdown
- [표시](웹주소, 상대경로 혹은 절대경로)/// 링크적용
- -> My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
-```
-
----
-아래는 적용된 모습이다.
-
----
-![lime](https://techcrunch.com/wp-content/uploads/2015/05/limes-e1431965418433.jpg?w=1390&crop=1)
-
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
-
----
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>URLs & Email Addresses</strong></span>
-### <>를 감싼뒤에 그 안에 ULR, Email 주소를 작성한다.
-
-```markdown
-<https://felipuss.tistory.com/>
-<fake@example.com>
-```
-
-아래는 적용된 모습이다.
-
----
-<https://felipuss.tistory.com/> <br>
-<fake@example.com>
-
----
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>Escape문</strong></span>
-
-### backslash to escape the following characters
-
-* 평소에 그냥 사용할 수 없는 특수문자를 \ (백슬래쉬)를 이용해 특문표현이 가능하다.
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>HTML 문법 사용</strong></span>
-### 1.마크다운 언어는 HTML또한 사용 가능하다.
-### 2. < style> 태그로 글자의 색,크기, 등등 CSS문법을 사용할 수있다.
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png)
-
-<div id="BGC"><strong>GFM Syntax</strong></div>
-
-
-# <span class="lime"><strong>코드블럭(Code Block)</strong></span>
-```markdown
-    ```(language)
+* 계정 초기설정
+    ```
+    git config --global user.name [이름]
+    git config --global user.email [이메일]
+    ```
+* 사용 환경 전부 확인
+    ```
+    git config --list
     ```
 
-    ```ruby
-    require 'redcarpet'
-    markdown = Redcarpet.new("Hello World!")
-    puts markdown.to_html
-    ```
-```
+* <img src ="2021-05-09-12-10-49.png" width="50%">
 
-____________________________
- 
- ```ruby
-    require 'redcarpet'
-    markdown = Redcarpet.new("Hello World!")
-    puts markdown.to_html
-```
-____________________________
+### **A. git init**
 
-# <span class="lime"><strong>표만들기</strong></span>
+![](2021-05-09-06-06-44.png)
 
-### 1. '|' 로 일단 표를 나눈다.
-* | 으로 나눈것만큼 열을 생성할 수가 있다
-### 2. '---' 로 머리글 행을 표시한다.
-* |:---| 는 왼쪽정렬
-* |---:| 는 오른쪽 정렬
-* |:---:| 는 가운데 정렬
+.git 이라는 하위 디렉토리를 만들고 파일의 버젼을 관리한다 
+* 아직 프로젝트 파일 관리 못한다
 
-```markdown
-| Markdown | Output |
-|:---|:---|
-```
-
-### 3. 이제 한줄 한줄 행을 설정할 수 있다. 
-
-```markdown
-| # 제목 1 | <h1>제목 1</h1> |
-| ## 제목 2 | <h2>제목 2</h2> | 
-```
-
-아래는 적용된 모습이다.
-
----
-
-| Markdown | Output |
-|:---|:---|
-| ## 제목 2 | <h2>제목 2</h2> |
-| ### 제목 3 | <h3>제목 3</h3> | 
-
----
-
-
-# <span class="lime"><strong>체크바(Task lists)
-</strong></span>
-
-### 1.체크바를 생성하기 위해선 '-' 으로 리스트를 생성하고 대괄호를 작성한다.
- * [x] : 체크 표시
- * [] : 체크 안됨
-
-```markdown
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-```
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-
-### 2.괄호를 작성하기 위해 이스케이프문 '\\'를 사용한뒤 괄호를 적용하면 된다.
-
-```markdown
-- [ ] \(Optional) Open a followup issue
-```
-
-<!-- 마크다운으로 주석 처리 가능 -->
-
-# <span class="lime"><strong>언급기능(Mentioning people & teams)
-</strong></span>
-
-### 1. You can mention a person or team on GitHub  
-* typing @ plus their username or team name.
-
-
-```markdown
-@github/support What do you think about these updates?
-```
-# <span class="lime"><strong>Autolinked references and URLs
-### 1.URLs
-* GitHub automatically creates links from standard URLs.
-
-```markdown
-Visit https://github.com
-```
-
-Visit https://github.com
-
-### 2. Issues and pull requests
-* Within conversations on GitHub, references to issues and pull requests are automatically converted to shortened links.
-
-|Reference type  |Raw reference  |Short link |
-|:---|:---|:---|
-|Issue or pull request URL| https://github.com/jlord/sheetsee.js/issues/26| #26|
-| # and issue or pull request number| #26   | #26 |
-|GH- and issue or pull request number| GH-26| GH-26|
-
-#1
-mojombo#1
-mojombo/github-flavored-markdown#1
-
-### 3.Commit SHAs
-* References to a commit's SHA hash are automatically converted into shortened links to the commit on GitHub.
-
-|Reference type |Raw reference  |Short link|
-|:---|:---|:---|
-|Commit URL |https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e   |a5c3785|
-|SHA|   a5c3785ed8d6a35868bc169f07e40e889087fd2e|   a5c3785|
-|User@SHA|  jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e|jlord@a5c3785|
-
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
-
-# <span class="lime"><strong>취소선(Strikethrough)<strong></span>
-### 1. '~~' 을 취소선을 적용할 범위마다 앞뒤로 적어주면 적용된다.
-
-    ~~안녕하세요~~
-
-~~안녕하세요~~
-
-# <span class="lime"><strong>이모티콘 사용(Emoji)<strong></span>
-
-### 문장 사이에 사용하고 싶은 이모티콘의 [Emojicode](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) 를 :로 감싸면서 사용한다.
-
-
-```markdown
-:EMOJICODE:
-
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+* .git 디렉토리에는 저장소에 필요한 뼈대 파일(Skeleton)이 들어 있다.
 
 ```
+git init
+```
 
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
-# <span class="lime"><strong>GITHUB URL<strong></span>
-https://github.com/DogGuyMan/GFM_Syntax/blob/main/README.md
+### **B .git clone [url]**
+
+![](2021-05-09-06-31-48.png)
+
+기존 저장소를 clone 하는것이다. 다른 프로젝트의 git 저장소를 복사하고싶을 떄 이 명령을 사용한다.
+
+* Tracked이면서 Unmodified 상태이다. 
+
+```
+git clone [url "깃허브 주소"]
+```
+
+### **C. git add [옵션]**
+파일을 stage상태로 전환한다. 
+그렇게 함으로 commit 준비상태가 된다
+
+꼭! commit 전에 방금 수정사항들을 저장한 이후에 실행되어야 하는 명령어이다
+
+[옵션] 심볼로 add할 부분을 설정하는등 세부적인 옵션을 정할 수 있다.
+
+|명령어|옵션|설명|
+|:--|:--|:--|
+|git add .(혹 *)| . (혹 *) |현재 폴더의 모든 파일과 디렉토리, 하위 디렉토리에 든 전부를 staging area에 추가한다.|
+|git add -p [<파일>]| -p |파일의 일부를 staging하기|
+|git add -i |-i | 수정되고 추적되는 파일의 변경 사항 staging하기|
+
+```
+git add 
+```
+
+
+### **D. git log**
+. Git에는 히스토리를 조회하는 명령어인 git log 가 있다.
+
+커밋의 SHA-1 체크섬, 저자 이름, 저자 이메일, 커밋한 날짜, 커밋 메시지를 보여준다.
+
+* 조회 키워드를 제한 할 수 있고조회 옵션을 선택 가능하다
+
+```
+git log
+```
+
+### **E. git status**
+Git의 "상태" 부분을 콘솔로 확인 할 수 있다.
+작업 디렉토리(working directory)와 스테이징 영역(staging area)의 상태를 확인하기 위해서 사용된다.
+
+>* ![](2021-05-09-07-47-19.png)<br>
+빨간색은 아직 담기지 않은 파일을 말한다 
+
+>* ![](2021-05-09-11-51-08.png)<br>
+> 여기서 add 를 하게 된다면 초록색으로 바뀌게 될 것이다
+
+```
+git status
+```
+
+### **F. git tag**
+태그 조회하기
+우선 git tag 명령으로 (-l, `--list`는 옵션) 이미 만들어진 태그가 있는지 확인할 수 있다. 
+
+
+```
+git tag
+```
+
+-------
+
+## 5. GIT 디렉토리 
+
+### **A. git commit**
+수정한 것을 Staging Area에서 파일을 커밋한다. Unstaged 상태의 파일은 커밋되지 않는다
+
+* 마치 디렉토리 전체를 복사하여 붙여넣는것과 비슷하다.
+
+* 변경본을 전체 복사하는게 아니라 변경내역 (일명 델타라고 하는것) 을 저장한다
+
+![](2021-05-09-02-54-47.png)
+![](2021-05-09-02-55-04.png)
+
+* commit 의 옵션도 존재한다.
+
+|명령어|옵션|설명|
+|:--|:--|:--|
+|git commit -m "메세지"| -m |인라인 형식으로 바로 커밋 메세지 작성.|
+|git commit -a | -a|a : 별도의 add명령어를 사용하지 않고 add, commit을 한번에 수행|
+|git commit -am "메세지"|-am | a, m의 옵션을 합친 형태.|
+
+```
+git commit
+```
+
+### **B. git remote**
+Push, Pull 기능으로 협업을 할때 사용되는 저장소이다. 리모트 저장소를 관리한다는 것은 저장소를 추가, 삭제하는 것뿐만 아니라 브랜치를 관리하고 추적할지 말지 등을 관리하는 것을 말한다.
+
+1. 리모트 저장소 확인하기
+git remote 명령으로 현재 프로젝트에 등록된 리모트 저장소를 확인할 수 있다.
+![](2021-05-09-10-29-34.png)
+
+2. 리모트 저장소 추가하기
+존 워킹 디렉토리에 새 리모트 저장소를 쉽게 추가할 수 있는데 git remote add <단축이름> <url> 명령을 사용한다.
+![](2021-05-09-10-33-41.png)
+이렇게 pull push 할 저장소의 목적지를 추가했다. 
+
+```
+git remote [주소]
+```
+
+### **C. git push**
+origin이라는 방금 전 리포트한 원격저장소에
+ 원하는 브랜치 (브랜치는 뒤에서 설명)에 푸쉬합니다.
+
+### **D. git pull**
+다른 사람이 원격 저장소(Remote repository)에 업데이트한 파일이 있을 때, 
+원격저장소와 내 로컬저장소의 상태를 동일하게 만들기 위해 pull을 이용합니다.
+
+### **E. git branch**
+코드를 통째로 복사하고 나서 원래 코드와는 상관없이 독립적으로 개발을 진행할 수 있는데, 이렇게 독립적으로 개발하는 것이 브랜치다
+
+![](2021-05-09-02-58-37.png)
+![](2021-05-09-02-59-20.png)
+
+이런식으로 색이 달라진 공간이 보인다
+
+여기에서 추가로 더 커밋을 한다면..
+
+![](2021-05-09-03-00-29.png)
+
+여기서 알수 있는 점은
+
+커밋을 하든 브랜치를 하던
+현재 우리가 있는 위치(브랜치 위치라고 하자)가 있다. 왼쪽에서는 main이 될 수 있고 또는 newImage가 될 수 있다.
+
+
+### **F. git checkout**
+만약 내가 main 이 아닌 newImage를 가지고 음직이고 싶다면 어떻게 해야하는걸까?
+
+git checkout newImage<br>(git checkout [브랜치명])
+
+위의 명령어로 브랜치를 이동할 수 있게된다.
+
+여기서 또 git commit을 하게된다면..
+
+![](2021-05-09-03-05-16.png)
+
+이렇게 메인이 아닌 NewImage가 commit 되었다
+
+![](2021-05-09-07-16-16.png)
+![](2021-05-09-07-16-56.png)
+
+### **G. merge [브랜치 명]**
+브랜치를 병합한다
+
+브랜치 병합은 merge 명령어로 실행합니다. 
+이 명령어에 병합할 커밋 이름을 넣어 실행하면,<br> 지정한 커밋 내용이 'HEAD'가 가리키고 있는 브랜치에 넣어진다. 
+
+#### **HEAD란?**
+head == 현재 체크아웃된 커밋
+현재 작업중인 커밋이다.
+HEAD는 항상 작업트리의 가장 최근 커밋을 가리킵니다.
+
+* ^연산자로 HEAD의 부모 작업 커밋을 가르킬 수 있다.
+
+
+![](2021-05-09-03-36-37.png)
+
+![](2021-05-09-03-37-00.png)
+
+### **H. git reset 옵션 (해시 4글자 이상)**
+git 이전 기록으로 undo 하는 명령어다.
+브랜치로 하여금 예전의 커밋을 가리키도록 이동시키는 방식으로 변경 내용을 되돌립니다.
+
+* "히스토리를 고쳐쓴다"라고 말할 수 있습니다. 마치 애초에 커밋하지 않은 것처럼 예전 커밋으로 브랜치를 옮기는 것입니다.
+
+
+#### **hard 옵션이란?**
+--hard 옵션은 되돌리는 것이 불가능하다. 이 옵션을 사용하면 워킹 디렉토리의 파일까지 강제로 덮어쓴다. 
+
+* ^연산자로 HEAD의 부모 작업 커밋을 가르킬 
+수 있다.
+
+![](2021-05-09-04-47-36.png)
+
+이러면 로컬 저장소에는 마치 C2커밋이 아예 없었던 것과 마찬가지 상태가 됩니다.
+
+### **I. rebase**
+브랜치 끼리의 작업을 접목시키는 방법
+
+![](2021-05-09-03-52-59.png)
+이런 상태가 있다고 가정하자
+
+git rebase main
+
+![](2021-05-09-03-53-37.png)
+
+main 그 다음 너머로 방금까지 있었던 브랜치가 붙어짐
+
+---------------------
+# 본격적으로 깃허브의 사용 시나리오를 보자
+
+## 1. 시작전 변경과 기존 공간 복사
+
+```
+git clone https://github.com/DogGuyMan/GFM_Syntax
+```
+
+![](2021-05-09-12-30-05.png)<br>
+
+저번 과제의 마크다운 파일이다
+이 과제의 라임색 Css를 붉은색 검은색으로 바꿀것이다.
+
+![](2021-05-09-12-44-43.png)<br>
+
+## 2. 깃허브 시작
+이제 깃허브에 올리기전에 
+깃 설정을 한다
+
+<img src ="2021-05-09-12-10-49.png" width="50%"><br>
+
+## 3. 깃 init
+<img src ="깃 init.PNG" width="100%"><br>
+
+## 4. 깃 branch 그리고 상태를 확인한다
+깃허브에 원본을 변경할 수 없으니
+브랜치를 나눠서 따로 과제를 올리겠다.
+
+<img src ="git branch and status.PNG" width="100%"><br>
+
+## 5. 깃 체크아웃으로 작업 브랜치를 이동한다.
+<img src = "git checkout push.PNG" width="100%"><br>
+
+## 6. 커밋할 준비와 커밋
+<img src = "깃 add.PNG" width="100%"><br>
+<img src = "깃 commit.PNG" width="100%"><br>
+
+## 7.변경점 확인
+![](2021-05-09-13-10-47.png)
+
+## 8.깃 로그
+![](2021-05-09-13-17-34.png)
+
+## 9.실험용으로 브랜치 만들고 삭제한다 
+![](2021-05-09-13-25-00.png)
+
+![](2021-05-09-13-25-33.png)
+
+![](2021-05-09-13-26-10.png)
+
+![](2021-05-09-13-26-34.png)
+
+![](2021-05-09-13-29-23.png)
+
+## 10. 실험용으로 브랜치 만들고 merge한다
+![](2021-05-09-13-35-18.png)
+
+## 11. 모든 브랜치를 이제 main으로 rebase 한다
+![](2021-05-09-13-42-44.png)

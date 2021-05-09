@@ -337,3 +337,6 @@ git clone https://github.com/DogGuyMan/GFM_Syntax
 
 ## 10. 실험용으로 브랜치 만들고 merge한다
 ![](2021-05-09-13-35-18.png)
+
+## 11. 모든 브랜치를 이제 main으로 rebase 한다
+![](2021-05-09-13-42-44.png)
